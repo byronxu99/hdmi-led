@@ -17,9 +17,10 @@ For another (unrelated) LED array driver, see [led-curtain-2](https://github.com
 * HDMI input is decoded to RGB video data by an IP block from the Diligent Vivado Library.
 * RGB video is converted to native AXI-Stream video with a Xilinx IP block, crossing clock domains from HDMI pixel clock to FPGA clock.
 * The `hls_video_processor` handles crop, scale, gamma correction, color correction, and brightness adjustment operations.
+* Scaling is performed by simply averaging a group of 32x32 input pixels to generate one output pixel. For such an extreme scaling factor, there is barely any visual difference between this method and more "proper" algorithms like cubic or Lanczos kernels.
 * Incoming pixels are stored into a buffer in the `triple_buffer` module.
 * On the outgoing end, the `matrix_controller` generates the necessary buffer locations to read for the next pixel, reversing rows when needed to match the physial array layout.
-* The `ws2812b_driver` generates output waveforms to communicate pixel data to the LED strip
+* The `ws2812b_driver` generates output waveforms to communicate pixel data to the LED strip. It is designed to match the timing requirements for [WS2812B LED strips](https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf). LED strips have huge timing tolerances relative to the precision that FPGAs offer.
 * The `user_input` module receives button and switch input and sets inputs to other modules accordingly.
 
 ![Block Design](https://i.imgur.com/ZkUan8F.png)
