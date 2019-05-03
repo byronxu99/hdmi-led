@@ -1,5 +1,5 @@
 # FPGA LED Driver
-This is a program designed to control a 60x30 LED array using a HDMI video input. Running on a [Pynq Z2](http://www.tul.com.tw/ProductsPYNQ-Z2.html) FPGA, it receives a 1920x1080 video stream, processes it, and outputs the waveform needed to communicate with a series of WS2012B individually addressable LEDs. The goal is to be able to use the LED array like any HDMI external monitor, without a need for special software on the computer side.
+This is a program designed to control a 60x30 LED array using a HDMI video input. Running on a [Pynq Z2](http://www.tul.com.tw/ProductsPYNQ-Z2.html) FPGA, it receives a 1920x1080 video stream, processes it, and outputs the waveform needed to communicate with a series of WS2812B individually addressable LEDs. The goal is to be able to use the LED array like any HDMI external monitor, without a need for special software on the computer side.
 
 Features include
 * Real-time video scaling and cropping from 1920x1080 to 60x30
