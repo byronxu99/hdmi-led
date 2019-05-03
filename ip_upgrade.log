@@ -1,0 +1,16 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sun Apr  7 16:42:16 2019
+| Host         : DESKTOP-0HVAOD9 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_dvi2rgb_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_dvi2rgb_1_0 (digilentinc.com:ip:dvi2rgb:1.9 (Rev. 1)) to Vivado generation flows.
+

@@ -1,0 +1,71 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "PinnedPorts":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y 430 -defaultsOSRD
+preplace port hdmi_out_clk_n -pg 1 -y 150 -defaultsOSRD
+preplace port hdmi_out_clk_p -pg 1 -y 120 -defaultsOSRD
+preplace port hdmi_in_clk_n -pg 1 -y 590 -defaultsOSRD
+preplace port hdmi_in_clk_p -pg 1 -y 560 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 460 -defaultsOSRD
+preplace port hdmi_in_ddc -pg 1 -y 650 -defaultsOSRD
+preplace portBus hdmi_in_data_n -pg 1 -y 650 -defaultsOSRD
+preplace portBus hdmi_in_data_p -pg 1 -y 620 -defaultsOSRD
+preplace portBus hdmi_out_hpd -pg 1 -y 790 -defaultsOSRD
+preplace portBus hdmi_out_data_n -pg 1 -y 210 -defaultsOSRD
+preplace portBus leds -pg 1 -y 780 -defaultsOSRD
+preplace portBus hdmi_out_data_p -pg 1 -y 180 -defaultsOSRD
+preplace portBus hdmi_in_hpd -pg 1 -y 910 -defaultsOSRD
+preplace inst v_axi4s_vid_out_0 -pg 1 -lvl 6 -y 170 -defaultsOSRD
+preplace inst v_tc_0 -pg 1 -lvl 5 -y 210 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 7 -y 910 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 6 -y 790 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -y 470 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 7 -y 780 -defaultsOSRD
+preplace inst rgb2dvi_0 -pg 1 -lvl 7 -y 150 -defaultsOSRD
+preplace inst blinky_0 -pg 1 -lvl 6 -y 890 -defaultsOSRD
+preplace inst v_vid_in_axi4s_0 -pg 1 -lvl 4 -y 180 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 2 -y 710 -defaultsOSRD
+preplace inst dvi2rgb_1 -pg 1 -lvl 3 -y 620 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 7 -y 470 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 7 1 NJ
+preplace netloc v_axi4s_vid_out_0_vid_data 1 6 1 N
+preplace netloc rgb2dvi_0_TMDS_Clk_n 1 7 1 NJ
+preplace netloc v_vid_in_axi4s_0_video_out 1 4 2 1290 90 NJ
+preplace netloc v_axi4s_vid_out_0_vid_hsync 1 6 1 N
+preplace netloc rgb2dvi_0_TMDS_Clk_p 1 7 1 2310J
+preplace netloc dvi2rgb_1_DDC 1 3 5 NJ 650 NJ 650 NJ 650 NJ 650 NJ
+preplace netloc util_vector_logic_0_Res 1 6 1 NJ
+preplace netloc hdmi_out_hpd_1 1 0 6 NJ 790 NJ 790 NJ 790 NJ 790 NJ 790 NJ
+preplace netloc blinky_0_led 1 6 1 1920J
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 8 20 360 NJ 360 NJ 360 NJ 360 NJ 360 NJ 360 NJ 360 2320
+preplace netloc v_axi4s_vid_out_0_vid_active_video 1 6 1 1910
+preplace netloc hdmi_in_data_n_1 1 0 3 NJ 650 400J 630 NJ
+preplace netloc hdmi_in_clk_n_1 1 0 3 NJ 590 NJ 590 NJ
+preplace netloc hdmi_in_clk_p_1 1 0 3 30J 570 NJ 570 NJ
+preplace netloc v_axi4s_vid_out_0_locked 1 6 1 1910
+preplace netloc dvi2rgb_1_PixelClk 1 3 4 940 10 1280 10 1570 10 1930
+preplace netloc v_axi4s_vid_out_0_vtg_ce 1 4 3 1290 330 NJ 330 1900
+preplace netloc dvi2rgb_1_aPixelClkLckd 1 3 4 NJ 690 NJ 690 NJ 690 1900
+preplace netloc xlconcat_0_dout 1 7 1 NJ
+preplace netloc xlconstant_0_dout 1 7 1 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 7 1 2330J
+preplace netloc dvi2rgb_1_vid_pVSync 1 3 1 970
+preplace netloc rgb2dvi_0_TMDS_Data_n 1 7 1 2310J
+preplace netloc clk_wiz_0_clk_out1 1 2 1 600
+preplace netloc proc_sys_reset_0_peripheral_reset 1 1 1 380
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 6 N 510 590 350 990 350 NJ 350 1590 340 1920
+preplace netloc dvi2rgb_1_vid_pData 1 3 1 930
+preplace netloc rgb2dvi_0_TMDS_Data_p 1 7 1 2310J
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 8 30 370 390 370 NJ 370 980 370 NJ 370 1580 370 1930 370 2310
+preplace netloc v_tc_0_vtiming_out 1 5 1 1560
+preplace netloc v_vid_in_axi4s_0_vtiming_out 1 4 1 N
+preplace netloc v_axi4s_vid_out_0_vid_vsync 1 6 1 N
+preplace netloc dvi2rgb_1_vid_pHSync 1 3 1 960
+preplace netloc dvi2rgb_1_vid_pVDE 1 3 1 950
+preplace netloc hdmi_in_data_p_1 1 0 3 NJ 620 370J 610 NJ
+levelinfo -pg 1 0 200 500 770 1140 1430 1750 2120 2350 -top 0 -bot 970
+"
+}
+0

@@ -1,0 +1,54 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'hls_video_processor'" level="0">
+<item name = "Date">Thu Apr 25 22:46:33 2019
+</item>
+<item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
+<item name = "Project">hls_video_processor</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">6.60, 5.775, 0.82</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">2076845, 2079004, 2076842, 2079004, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_brightness_color_adj_fu_242">brightness_color_adj, 14492, 14492, 14492, 14492, none</column>
+<column name="grp_video_scale_fu_262">video_scale, 1848062, 1848062, 1848062, 1848062, none</column>
+<column name="grp_AXIvideo2Mat_fu_272">AXIvideo2Mat, 3, 2079003, 3, 2079003, none</column>
+<column name="grp_Loop_loop_height_pro_2_fu_296">Loop_loop_height_pro_2, 2076841, 2076841, 2076841, 2076841, none</column>
+<column name="grp_Loop_loop_height_pro_1_fu_308">Loop_loop_height_pro_1, 1848961, 1848961, 1848961, 1848961, none</column>
+<column name="grp_Mat2AXIvideo_fu_320">Mat2AXIvideo, 1921, 1921, 1921, 1921, none</column>
+<column name="grp_Loop_loop_height_pro_fu_341">Loop_loop_height_pro, 1891, 1891, 1891, 1891, none</column>
+<column name="StgValue_39_Block_proc_fu_351">Block_proc, 0, 0, 0, 0, none</column>
+<column name="extLd_loc_channel_Block_proc55_fu_358">Block_proc55, 0, 0, 0, 0, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

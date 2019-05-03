@@ -1,0 +1,183 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date             : Fri Apr 26 23:31:17 2019
+| Host             : DESKTOP-0HVAOD9 running 64-bit major release  (build 9200)
+| Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
+| Design           : design_1_wrapper
+| Device           : xc7z020clg400-1
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 1.701        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 1.555        |
+| Device Static (W)        | 0.147        |
+| Effective TJA (C/W)      | 11.5         |
+| Max Ambient (C)          | 65.4         |
+| Junction Temperature (C) | 44.6         |
+| Confidence Level         | Low          |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| Clocks                   |     0.022 |       11 |       --- |             --- |
+| Slice Logic              |     0.006 |     5631 |       --- |             --- |
+|   LUT as Logic           |     0.005 |     1768 |     53200 |            3.32 |
+|   CARRY4                 |    <0.001 |      213 |     13300 |            1.60 |
+|   Register               |    <0.001 |     2795 |    106400 |            2.63 |
+|   LUT as Distributed RAM |    <0.001 |       24 |     17400 |            0.14 |
+|   Others                 |    <0.001 |      387 |       --- |             --- |
+|   F7/F8 Muxes            |    <0.001 |       27 |     53200 |            0.05 |
+|   LUT as Shift Register  |     0.000 |        1 |     17400 |           <0.01 |
+| Signals                  |     0.007 |     4135 |       --- |             --- |
+| Block RAM                |     0.030 |       19 |       140 |           13.57 |
+| MMCM                     |     0.192 |        2 |         4 |           50.00 |
+| DSPs                     |    <0.001 |        6 |       220 |            2.73 |
+| I/O                      |     0.044 |       29 |       125 |           23.20 |
+| PS7                      |     1.253 |        1 |       --- |             --- |
+| Static Power             |     0.147 |          |           |                 |
+| Total                    |     1.701 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |     0.083 |       0.068 |      0.016 |
+| Vccaux    |       1.800 |     0.138 |       0.123 |      0.015 |
+| Vcco33    |       3.300 |     0.004 |       0.003 |      0.001 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.005 |       0.002 |      0.002 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccpint   |       1.000 |     0.678 |       0.648 |      0.030 |
+| Vccpaux   |       1.800 |     0.036 |       0.026 |      0.010 |
+| Vccpll    |       1.800 |     0.017 |       0.014 |      0.003 |
+| Vcco_ddr  |       1.500 |     0.354 |       0.352 |      0.002 |
+| Vcco_mio0 |       3.300 |     0.003 |       0.002 |      0.001 |
+| Vcco_mio1 |       1.800 |     0.001 |       0.000 |      0.001 |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                     |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks                 |                                                                                                            |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                           |                                                                                                            |
+|                             |            |                                                        |                                                                                                            |
+| Overall confidence level    | Low        |                                                        |                                                                                                            |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+------------------------+
+| Ambient Temp (C)      | 25.0                   |
+| ThetaJA (C/W)         | 11.5                   |
+| Airflow (LFM)         | 250                    |
+| Heat Sink             | none                   |
+| ThetaSA (C/W)         | 0.0                    |
+| Board Selection       | medium (10"x10")       |
+| # of Board Layers     | 8to11 (8 to 11 Layers) |
+| Board Temperature (C) | 25.0                   |
++-----------------------+------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-------------------------------+-------------------------------------------------------------------+-----------------+
+| Clock                         | Domain                                                            | Constraint (ns) |
++-------------------------------+-------------------------------------------------------------------+-----------------+
+| CLKFBIN                       | design_1_i/dvi2rgb_1/U0/TMDS_ClockingX/CLKFBIN                    |             8.3 |
+| CLK_OUT_5x_hdmi_clk           | design_1_i/dvi2rgb_1/U0/TMDS_ClockingX/CLK_OUT_5x_hdmi_clk        |             1.7 |
+| PixelClk_int                  | design_1_i/dvi2rgb_1/U0/TMDS_ClockingX/rMMCM_LckdRisingFlag_reg_0 |             8.3 |
+| clk_fpga_0                    | design_1_i/processing_system7_0/inst/FCLK_CLK0                    |             6.7 |
+| clk_fpga_0                    | design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]       |             6.7 |
+| clk_out1_design_1_clk_wiz_0_0 | design_1_i/clk_wiz_0/inst/clk_out1                                |             5.0 |
+| clk_out1_design_1_clk_wiz_0_0 | design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0           |             5.0 |
+| clkfbout_design_1_clk_wiz_0_0 | design_1_i/clk_wiz_0/inst/clkfbout_design_1_clk_wiz_0_0           |            20.0 |
+| hdmi_in_clk_p                 | hdmi_in_clk_p                                                     |             8.3 |
++-------------------------------+-------------------------------------------------------------------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++---------------------------+-----------+
+| Name                      | Power (W) |
++---------------------------+-----------+
+| design_1_wrapper          |     1.555 |
+|   design_1_i              |     1.544 |
+|     clk_wiz_0             |     0.106 |
+|       inst                |     0.106 |
+|     dvi2rgb_1             |     0.130 |
+|       U0                  |     0.130 |
+|     hls_video_processor_0 |     0.022 |
+|       inst                |     0.022 |
+|     processing_system7_0  |     1.253 |
+|       inst                |     1.253 |
+|     triple_buffer_v1_0_0  |     0.019 |
+|       inst                |     0.019 |
+|     user_input_0          |     0.002 |
+|       inst                |     0.002 |
+|     v_vid_in_axi4s_0      |     0.010 |
+|       inst                |     0.010 |
++---------------------------+-----------+
+
+

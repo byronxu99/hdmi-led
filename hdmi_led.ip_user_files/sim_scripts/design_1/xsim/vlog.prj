@@ -1,0 +1,44 @@
+verilog xil_defaultlib --include "../../../../hdmi_led.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../hdmi_led.srcs/sources_1/bd/design_1/ipshared/70cf/hdl" --include "../../../../hdmi_led.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0" --include "../../../../hdmi_led.srcs/sources_1/bd/design_1/ipshared/85a3" --include "../../../../hdmi_led.srcs/sources_1/bd/design_1/ip/design_1_dvi2rgb_1_0/src/ila_refclk/hdl/verilog" --include "../../../../hdmi_led.srcs/sources_1/bd/design_1/ip/design_1_dvi2rgb_1_0/src/ila_pixclk/hdl/verilog" \
+"../../../bd/design_1/ip/design_1_processing_system7_0_0/sim/design_1_processing_system7_0_0.v" \
+"../../../bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v" \
+"../../../bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v" \
+"../../../bd/design_1/ip/design_1_xlconstant_0_0/sim/design_1_xlconstant_0_0.v" \
+"../../../bd/design_1/ip/design_1_xlconcat_0_0/sim/design_1_xlconcat_0_0.v" \
+"../../../bd/design_1/sim/design_1.v" \
+"../../../bd/design_1/ip/design_1_blinky_0_0/sim/design_1_blinky_0_0.v" \
+"../../../bd/design_1/ip/design_1_v_vid_in_axi4s_0_0/sim/design_1_v_vid_in_axi4s_0_0.v" \
+"../../../../hdmi_led.srcs/sources_1/bd/design_1/ipshared/b7c5/hdl/verilog/AXIvideo2Mat.v" \
+"../../../../hdmi_led.srcs/sources_1/bd/design_1/ipshared/b7c5/hdl/verilog/Block_proc.v" \
+"../../../../hdmi_led.srcs/sources_1/bd/design_1/ipshared/b7c5/hdl/verilog/Block_proc55.v" \
+"../../../../hdmi_led.srcs/sources_1/bd/design_1/ipshared/b7c5/hdl/verilog/brightness_color_adj.v" \
+"../../../../hdmi_led.srcs/sources_1/bd/design_1/ipshared/b7c5/hdl/verilog/brightness_color_fYi.v" \
+"../../../../hdmi_led.srcs/sources_1/bd/design_1/ipshared/b7c5/hdl/verilog/brightness_color_g8j.v" \
+"../../../../hdmi_led.srcs/sources_1/bd/design_1/ipshared/b7c5/hdl/verilog/brightness_color_hbi.v" \
+"../../../../hdmi_led.srcs/sources_1/bd/design_1/ipshared/b7c5/hdl/verilog/fifo_w8_d2_A.v" \
+"../../../../hdmi_led.srcs/sources_1/bd/design_1/ipshared/b7c5/hdl/verilog/fifo_w12_d2_A.v" \
+"../../../../hdmi_led.srcs/sources_1/bd/design_1/ipshared/b7c5/hdl/verilog/fifo_w32_d2_A.v" \
+"../../../../hdmi_led.srcs/sources_1/bd/design_1/ipshared/b7c5/hdl/verilog/hls_video_processibs.v" \
+"../../../../hdmi_led.srcs/sources_1/bd/design_1/ipshared/b7c5/hdl/verilog/Loop_loop_height_bkb.v" \
+"../../../../hdmi_led.srcs/sources_1/bd/design_1/ipshared/b7c5/hdl/verilog/Loop_loop_height_pro.v" \
+"../../../../hdmi_led.srcs/sources_1/bd/design_1/ipshared/b7c5/hdl/verilog/Loop_loop_height_pro_1.v" \
+"../../../../hdmi_led.srcs/sources_1/bd/design_1/ipshared/b7c5/hdl/verilog/Loop_loop_height_pro_2.v" \
+"../../../../hdmi_led.srcs/sources_1/bd/design_1/ipshared/b7c5/hdl/verilog/Mat2AXIvideo.v" \
+"../../../../hdmi_led.srcs/sources_1/bd/design_1/ipshared/b7c5/hdl/verilog/start_for_Block_pjbC.v" \
+"../../../../hdmi_led.srcs/sources_1/bd/design_1/ipshared/b7c5/hdl/verilog/start_for_brightnmb6.v" \
+"../../../../hdmi_led.srcs/sources_1/bd/design_1/ipshared/b7c5/hdl/verilog/start_for_Loop_lokbM.v" \
+"../../../../hdmi_led.srcs/sources_1/bd/design_1/ipshared/b7c5/hdl/verilog/start_for_Loop_loncg.v" \
+"../../../../hdmi_led.srcs/sources_1/bd/design_1/ipshared/b7c5/hdl/verilog/start_for_Mat2AXIocq.v" \
+"../../../../hdmi_led.srcs/sources_1/bd/design_1/ipshared/b7c5/hdl/verilog/start_for_video_slbW.v" \
+"../../../../hdmi_led.srcs/sources_1/bd/design_1/ipshared/b7c5/hdl/verilog/video_scale.v" \
+"../../../../hdmi_led.srcs/sources_1/bd/design_1/ipshared/b7c5/hdl/verilog/video_scale_sums_cud.v" \
+"../../../../hdmi_led.srcs/sources_1/bd/design_1/ipshared/b7c5/hdl/verilog/hls_video_processor.v" \
+"../../../bd/design_1/ip/design_1_hls_video_processor_0_0/sim/design_1_hls_video_processor_0_0.v" \
+"../../../bd/design_1/ip/design_1_triple_buffer_v1_0_0_0/sim/design_1_triple_buffer_v1_0_0_0.v" \
+"../../../bd/design_1/ip/design_1_matrix_controller_0_0/sim/design_1_matrix_controller_0_0.v" \
+"../../../bd/design_1/ip/design_1_ws2812b_driver_0_0/sim/design_1_ws2812b_driver_0_0.v" \
+"../../../bd/design_1/ip/design_1_xlconcat_1_0/sim/design_1_xlconcat_1_0.v" \
+"../../../bd/design_1/ip/design_1_user_input_0_0/sim/design_1_user_input_0_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

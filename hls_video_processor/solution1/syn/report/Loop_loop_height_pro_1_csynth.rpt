@@ -1,0 +1,195 @@
+
+
+================================================================
+== Vivado HLS Report for 'Loop_loop_height_pro_1'
+================================================================
+* Date:           Thu Apr 25 22:46:34 2019
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        hls_video_processor
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   6.60|     3.254|        0.82|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +---------+---------+---------+---------+---------+
+    |      Latency      |      Interval     | Pipeline|
+    |   min   |   max   |   min   |   max   |   Type  |
+    +---------+---------+---------+---------+---------+
+    |  1848961|  1848961|  1848961|  1848961|   none  |
+    +---------+---------+---------+---------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------+---------+---------+----------+-----------+-----------+------+----------+
+        |               |      Latency      | Iteration|  Initiation Interval  | Trip |          |
+        |   Loop Name   |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- loop_height  |  1848960|  1848960|      1926|          -|          -|   960|    no    |
+        | + loop_width  |     1923|     1923|         5|          1|          1|  1920|    yes   |
+        +---------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       0|     65|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|      -|       -|      -|
+|Memory           |        2|      -|       0|      0|
+|Multiplexer      |        -|      -|       -|    135|
+|Register         |        0|      -|     167|     32|
++-----------------+---------+-------+--------+-------+
+|Total            |        2|      0|     167|    232|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |    ~0   |      0|   ~0   |   ~0  |
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    +-------------------+----------------------+---------+---+----+------+-----+------+-------------+
+    |       Memory      |        Module        | BRAM_18K| FF| LUT| Words| Bits| Banks| W*Bits*Banks|
+    +-------------------+----------------------+---------+---+----+------+-----+------+-------------+
+    |lut_srgb_decode_U  |Loop_loop_height_bkb  |        2|  0|   0|   256|   12|     1|         3072|
+    +-------------------+----------------------+---------+---+----+------+-----+------+-------------+
+    |Total              |                      |        2|  0|   0|   256|   12|     1|         3072|
+    +-------------------+----------------------+---------+---+----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |c_V_fu_183_p2                     |     +    |      0|  0|  13|          11|           1|
+    |r_V_fu_171_p2                     |     +    |      0|  0|  14|          10|           1|
+    |exitcond113_i_fu_165_p2           |   icmp   |      0|  0|  13|          10|           8|
+    |exitcond_i4_fu_177_p2             |   icmp   |      0|  0|  13|          11|           9|
+    |ap_block_pp0_stage0_01001         |    or    |      0|  0|   2|           1|           1|
+    |ap_block_state1                   |    or    |      0|  0|   2|           1|           1|
+    |ap_block_state4_pp0_stage0_iter1  |    or    |      0|  0|   2|           1|           1|
+    |ap_block_state7_pp0_stage0_iter4  |    or    |      0|  0|   2|           1|           1|
+    |ap_enable_pp0                     |    xor   |      0|  0|   2|           1|           2|
+    |ap_enable_reg_pp0_iter1           |    xor   |      0|  0|   2|           2|           1|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |Total                             |          |      0|  0|  65|          49|          26|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------------------+----+-----------+-----+-----------+
+    |                Name               | LUT| Input Size| Bits| Total Bits|
+    +-----------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                          |  27|          5|    1|          5|
+    |ap_done                            |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1            |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter4            |   9|          2|    1|          2|
+    |img_crop_data_stream_0_V_blk_n     |   9|          2|    1|          2|
+    |img_crop_data_stream_1_V_blk_n     |   9|          2|    1|          2|
+    |img_crop_data_stream_2_V_blk_n     |   9|          2|    1|          2|
+    |img_nogamma_data_stream_0_V_blk_n  |   9|          2|    1|          2|
+    |img_nogamma_data_stream_1_V_blk_n  |   9|          2|    1|          2|
+    |img_nogamma_data_stream_2_V_blk_n  |   9|          2|    1|          2|
+    |real_start                         |   9|          2|    1|          2|
+    |t_V_1_reg_154                      |   9|          2|   11|         22|
+    |t_V_3_reg_143                      |   9|          2|   10|         20|
+    +-----------------------------------+----+-----------+-----+-----------+
+    |Total                              | 135|         29|   32|         67|
+    +-----------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------------------+----+----+-----+-----------+
+    |              Name              | FF | LUT| Bits| Const Bits|
+    +--------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                       |   4|   0|    4|          0|
+    |ap_done_reg                     |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter0         |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1         |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2         |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter3         |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter4         |   1|   0|    1|          0|
+    |exitcond_i4_reg_225             |   1|   0|    1|          0|
+    |lut_srgb_decode_addr_1_reg_239  |   8|   0|    8|          0|
+    |lut_srgb_decode_addr_2_reg_244  |   8|   0|    8|          0|
+    |lut_srgb_decode_addr_reg_234    |   8|   0|    8|          0|
+    |r_V_reg_220                     |  10|   0|   10|          0|
+    |start_once_reg                  |   1|   0|    1|          0|
+    |t_V_1_reg_154                   |  11|   0|   11|          0|
+    |t_V_3_reg_143                   |  10|   0|   10|          0|
+    |tmp_41_reg_249                  |  12|   0|   12|          0|
+    |tmp_42_reg_254                  |  12|   0|   12|          0|
+    |tmp_43_reg_259                  |  12|   0|   12|          0|
+    |exitcond_i4_reg_225             |  64|  32|    1|          0|
+    +--------------------------------+----+----+-----+-----------+
+    |Total                           | 167|  32|  104|          0|
+    +--------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------------------+-----+-----+------------+-----------------------------+--------------+
+|              RTL Ports             | Dir | Bits|  Protocol  |        Source Object        |    C Type    |
++------------------------------------+-----+-----+------------+-----------------------------+--------------+
+|ap_clk                              |  in |    1| ap_ctrl_hs |    Loop_loop_height_pro.1   | return value |
+|ap_rst                              |  in |    1| ap_ctrl_hs |    Loop_loop_height_pro.1   | return value |
+|ap_start                            |  in |    1| ap_ctrl_hs |    Loop_loop_height_pro.1   | return value |
+|start_full_n                        |  in |    1| ap_ctrl_hs |    Loop_loop_height_pro.1   | return value |
+|ap_done                             | out |    1| ap_ctrl_hs |    Loop_loop_height_pro.1   | return value |
+|ap_continue                         |  in |    1| ap_ctrl_hs |    Loop_loop_height_pro.1   | return value |
+|ap_idle                             | out |    1| ap_ctrl_hs |    Loop_loop_height_pro.1   | return value |
+|ap_ready                            | out |    1| ap_ctrl_hs |    Loop_loop_height_pro.1   | return value |
+|start_out                           | out |    1| ap_ctrl_hs |    Loop_loop_height_pro.1   | return value |
+|start_write                         | out |    1| ap_ctrl_hs |    Loop_loop_height_pro.1   | return value |
+|img_crop_data_stream_0_V_dout       |  in |    8|   ap_fifo  |   img_crop_data_stream_0_V  |    pointer   |
+|img_crop_data_stream_0_V_empty_n    |  in |    1|   ap_fifo  |   img_crop_data_stream_0_V  |    pointer   |
+|img_crop_data_stream_0_V_read       | out |    1|   ap_fifo  |   img_crop_data_stream_0_V  |    pointer   |
+|img_crop_data_stream_1_V_dout       |  in |    8|   ap_fifo  |   img_crop_data_stream_1_V  |    pointer   |
+|img_crop_data_stream_1_V_empty_n    |  in |    1|   ap_fifo  |   img_crop_data_stream_1_V  |    pointer   |
+|img_crop_data_stream_1_V_read       | out |    1|   ap_fifo  |   img_crop_data_stream_1_V  |    pointer   |
+|img_crop_data_stream_2_V_dout       |  in |    8|   ap_fifo  |   img_crop_data_stream_2_V  |    pointer   |
+|img_crop_data_stream_2_V_empty_n    |  in |    1|   ap_fifo  |   img_crop_data_stream_2_V  |    pointer   |
+|img_crop_data_stream_2_V_read       | out |    1|   ap_fifo  |   img_crop_data_stream_2_V  |    pointer   |
+|img_nogamma_data_stream_0_V_din     | out |   32|   ap_fifo  | img_nogamma_data_stream_0_V |    pointer   |
+|img_nogamma_data_stream_0_V_full_n  |  in |    1|   ap_fifo  | img_nogamma_data_stream_0_V |    pointer   |
+|img_nogamma_data_stream_0_V_write   | out |    1|   ap_fifo  | img_nogamma_data_stream_0_V |    pointer   |
+|img_nogamma_data_stream_1_V_din     | out |   32|   ap_fifo  | img_nogamma_data_stream_1_V |    pointer   |
+|img_nogamma_data_stream_1_V_full_n  |  in |    1|   ap_fifo  | img_nogamma_data_stream_1_V |    pointer   |
+|img_nogamma_data_stream_1_V_write   | out |    1|   ap_fifo  | img_nogamma_data_stream_1_V |    pointer   |
+|img_nogamma_data_stream_2_V_din     | out |   32|   ap_fifo  | img_nogamma_data_stream_2_V |    pointer   |
+|img_nogamma_data_stream_2_V_full_n  |  in |    1|   ap_fifo  | img_nogamma_data_stream_2_V |    pointer   |
+|img_nogamma_data_stream_2_V_write   | out |    1|   ap_fifo  | img_nogamma_data_stream_2_V |    pointer   |
++------------------------------------+-----+-----+------------+-----------------------------+--------------+
+

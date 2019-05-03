@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="hls_video_processor.h" path="C:\Users\byronxu\Documents\6.S193\hls_video_processor\hls_video_processor.h"/>
+    <originFiles name="hls_video_processor.cpp" path="C:\Users\byronxu\Documents\6.S193\hls_video_processor\hls_video_processor.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="test_img" path="C:\Users\byronxu\Documents\6.S193\hls_video_processor\test_img"/>
+    <originFiles name="hls_video_processor_testbench.cpp" path="C:\Users\byronxu\Documents\6.S193\hls_video_processor\hls_video_processor_testbench.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

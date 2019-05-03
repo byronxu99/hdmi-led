@@ -1,0 +1,141 @@
+
+
+================================================================
+== Vivado HLS Report for 'Block_proc'
+================================================================
+* Date:           Thu Apr 25 22:46:33 2019
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        hls_video_processor
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   6.60|     2.888|        0.82|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    0|    0|    0|    0|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       0|      2|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|      -|       -|      -|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|     45|
+|Register         |        -|      -|       3|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      0|       3|     47|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      0|   ~0   |   ~0  |
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------+----------+-------+---+----+------------+------------+
+    |  Variable Name  | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------+----------+-------+---+----+------------+------------+
+    |ap_block_state1  |    or    |      0|  0|   2|           1|           1|
+    +-----------------+----------+-------+---+----+------------+------------+
+    |Total            |          |      0|  0|   2|           1|           1|
+    +-----------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------------+----+-----------+-----+-----------+
+    |             Name            | LUT| Input Size| Bits| Total Bits|
+    +-----------------------------+----+-----------+-----+-----------+
+    |ap_done                      |   9|          2|    1|          2|
+    |img_input_cols_V_out_blk_n   |   9|          2|    1|          2|
+    |img_input_rows_V_out1_blk_n  |   9|          2|    1|          2|
+    |img_input_rows_V_out_blk_n   |   9|          2|    1|          2|
+    |real_start                   |   9|          2|    1|          2|
+    +-----------------------------+----+-----------+-----+-----------+
+    |Total                        |  45|         10|    5|         10|
+    +-----------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------+---+----+-----+-----------+
+    |      Name      | FF| LUT| Bits| Const Bits|
+    +----------------+---+----+-----+-----------+
+    |ap_CS_fsm       |  1|   0|    1|          0|
+    |ap_done_reg     |  1|   0|    1|          0|
+    |start_once_reg  |  1|   0|    1|          0|
+    +----------------+---+----+-----+-----------+
+    |Total           |  3|   0|    3|          0|
+    +----------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------------+-----+-----+------------+-----------------------+--------------+
+|           RTL Ports          | Dir | Bits|  Protocol  |     Source Object     |    C Type    |
++------------------------------+-----+-----+------------+-----------------------+--------------+
+|ap_clk                        |  in |    1| ap_ctrl_hs |      Block__proc      | return value |
+|ap_rst                        |  in |    1| ap_ctrl_hs |      Block__proc      | return value |
+|ap_start                      |  in |    1| ap_ctrl_hs |      Block__proc      | return value |
+|start_full_n                  |  in |    1| ap_ctrl_hs |      Block__proc      | return value |
+|ap_done                       | out |    1| ap_ctrl_hs |      Block__proc      | return value |
+|ap_continue                   |  in |    1| ap_ctrl_hs |      Block__proc      | return value |
+|ap_idle                       | out |    1| ap_ctrl_hs |      Block__proc      | return value |
+|ap_ready                      | out |    1| ap_ctrl_hs |      Block__proc      | return value |
+|start_out                     | out |    1| ap_ctrl_hs |      Block__proc      | return value |
+|start_write                   | out |    1| ap_ctrl_hs |      Block__proc      | return value |
+|img_input_rows_V_out_din      | out |   12|   ap_fifo  |  img_input_rows_V_out |    pointer   |
+|img_input_rows_V_out_full_n   |  in |    1|   ap_fifo  |  img_input_rows_V_out |    pointer   |
+|img_input_rows_V_out_write    | out |    1|   ap_fifo  |  img_input_rows_V_out |    pointer   |
+|img_input_rows_V_out1_din     | out |   12|   ap_fifo  | img_input_rows_V_out1 |    pointer   |
+|img_input_rows_V_out1_full_n  |  in |    1|   ap_fifo  | img_input_rows_V_out1 |    pointer   |
+|img_input_rows_V_out1_write   | out |    1|   ap_fifo  | img_input_rows_V_out1 |    pointer   |
+|img_input_cols_V_out_din      | out |   12|   ap_fifo  |  img_input_cols_V_out |    pointer   |
+|img_input_cols_V_out_full_n   |  in |    1|   ap_fifo  |  img_input_cols_V_out |    pointer   |
+|img_input_cols_V_out_write    | out |    1|   ap_fifo  |  img_input_cols_V_out |    pointer   |
++------------------------------+-----+-----+------------+-----------------------+--------------+
+

@@ -1,0 +1,1234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="hls_video_processor.wdb" id="1">
+         <top_modules>
+            <top_module name="apa_hls_video_processor_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0ns"></ZoomStartTime>
+      <ZoomEndTime time="2000ns"></ZoomEndTime>
+      <Cursor1Time time="0ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="257"></NameColumnWidth>
+      <ValueColumnWidth column_width="84"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject type="group" fp_name="AESL_inst_hls_video_processor_group">
+      <obj_property name="label">AESL_inst_hls_video_processor</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Block_proc_U0/Block_proc_U0_activity">
+         <obj_property name="ElementShortName">Block_proc_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Block_proc_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/AXIvideo2Mat_U0/AXIvideo2Mat_U0_activity">
+         <obj_property name="ElementShortName">AXIvideo2Mat_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">AXIvideo2Mat_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Block_proc55_U0/Block_proc55_U0_activity">
+         <obj_property name="ElementShortName">Block_proc55_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Block_proc55_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_2_U0/Loop_loop_height_pro_2_U0_activity">
+         <obj_property name="ElementShortName">Loop_loop_height_pro_2_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Loop_loop_height_pro_2_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_1_U0/Loop_loop_height_pro_1_U0_activity">
+         <obj_property name="ElementShortName">Loop_loop_height_pro_1_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Loop_loop_height_pro_1_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/video_scale_U0/video_scale_U0_activity">
+         <obj_property name="ElementShortName">video_scale_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">video_scale_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/brightness_color_adj_U0/brightness_color_adj_U0_activity">
+         <obj_property name="ElementShortName">brightness_color_adj_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">brightness_color_adj_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_U0/Loop_loop_height_pro_U0_activity">
+         <obj_property name="ElementShortName">Loop_loop_height_pro_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Loop_loop_height_pro_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Mat2AXIvideo_U0/Mat2AXIvideo_U0_activity">
+         <obj_property name="ElementShortName">Mat2AXIvideo_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Mat2AXIvideo_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="group" fp_name="Block_proc_U0_group">
+         <obj_property name="label">Block_proc_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="Block_proc_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="Block_proc_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Block_proc_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Block_proc_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Block_proc_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Block_proc_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Block_proc_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="img_input_rows_V_out_group">
+               <obj_property name="label">img_input_rows_V_out(img_input_rows_V_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Block_proc_U0/img_input_rows_V_out_blk_n">
+                  <obj_property name="ElementShortName">img_input_rows_V_out_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">img_input_rows_V_out_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Block_proc_U0/img_input_rows_V_out_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Block_proc_U0/img_input_rows_V_out_full_n">
+                  <obj_property name="ElementShortName">img_input_rows_V_out_full_n</obj_property>
+                  <obj_property name="ObjectShortName">img_input_rows_V_out_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Block_proc_U0/img_input_rows_V_out_write">
+                  <obj_property name="ElementShortName">img_input_rows_V_out_write</obj_property>
+                  <obj_property name="ObjectShortName">img_input_rows_V_out_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="img_input_rows_V_out1_group">
+               <obj_property name="label">img_input_rows_V_out1(img_input_rows_V_c20_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Block_proc_U0/img_input_rows_V_out1_blk_n">
+                  <obj_property name="ElementShortName">img_input_rows_V_out1_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">img_input_rows_V_out1_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Block_proc_U0/img_input_rows_V_out1_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Block_proc_U0/img_input_rows_V_out1_full_n">
+                  <obj_property name="ElementShortName">img_input_rows_V_out1_full_n</obj_property>
+                  <obj_property name="ObjectShortName">img_input_rows_V_out1_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Block_proc_U0/img_input_rows_V_out1_write">
+                  <obj_property name="ElementShortName">img_input_rows_V_out1_write</obj_property>
+                  <obj_property name="ObjectShortName">img_input_rows_V_out1_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="img_input_cols_V_out_group">
+               <obj_property name="label">img_input_cols_V_out(img_input_cols_V_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Block_proc_U0/img_input_cols_V_out_blk_n">
+                  <obj_property name="ElementShortName">img_input_cols_V_out_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">img_input_cols_V_out_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Block_proc_U0/img_input_cols_V_out_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Block_proc_U0/img_input_cols_V_out_full_n">
+                  <obj_property name="ElementShortName">img_input_cols_V_out_full_n</obj_property>
+                  <obj_property name="ObjectShortName">img_input_cols_V_out_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Block_proc_U0/img_input_cols_V_out_write">
+                  <obj_property name="ElementShortName">img_input_cols_V_out_write</obj_property>
+                  <obj_property name="ObjectShortName">img_input_cols_V_out_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="AXIvideo2Mat_U0_group">
+         <obj_property name="label">AXIvideo2Mat_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="AXIvideo2Mat_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="img_rows_V_group">
+               <obj_property name="label">img_rows_V(img_input_rows_V_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/AXIvideo2Mat_U0/img_rows_V_blk_n">
+                  <obj_property name="ElementShortName">img_rows_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">img_rows_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/AXIvideo2Mat_U0/img_rows_V_dout">
+                  <obj_property name="ElementShortName">img_rows_V_dout[11:0]</obj_property>
+                  <obj_property name="ObjectShortName">img_rows_V_dout[11:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/AXIvideo2Mat_U0/img_rows_V_empty_n">
+                  <obj_property name="ElementShortName">img_rows_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">img_rows_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/AXIvideo2Mat_U0/img_rows_V_read">
+                  <obj_property name="ElementShortName">img_rows_V_read</obj_property>
+                  <obj_property name="ObjectShortName">img_rows_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="img_cols_V_group">
+               <obj_property name="label">img_cols_V(img_input_cols_V_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/AXIvideo2Mat_U0/img_cols_V_blk_n">
+                  <obj_property name="ElementShortName">img_cols_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">img_cols_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/AXIvideo2Mat_U0/img_cols_V_dout">
+                  <obj_property name="ElementShortName">img_cols_V_dout[11:0]</obj_property>
+                  <obj_property name="ObjectShortName">img_cols_V_dout[11:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/AXIvideo2Mat_U0/img_cols_V_empty_n">
+                  <obj_property name="ElementShortName">img_cols_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">img_cols_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/AXIvideo2Mat_U0/img_cols_V_read">
+                  <obj_property name="ElementShortName">img_cols_V_read</obj_property>
+                  <obj_property name="ObjectShortName">img_cols_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="AXIvideo2Mat_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/AXIvideo2Mat_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/AXIvideo2Mat_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/AXIvideo2Mat_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/AXIvideo2Mat_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="AXIvideo2Mat_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="img_data_stream_0_V_group">
+               <obj_property name="label">img_data_stream_0_V(img_input_data_strea_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/AXIvideo2Mat_U0/img_data_stream_0_V_blk_n">
+                  <obj_property name="ElementShortName">img_data_stream_0_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">img_data_stream_0_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/AXIvideo2Mat_U0/img_data_stream_0_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/AXIvideo2Mat_U0/img_data_stream_0_V_full_n">
+                  <obj_property name="ElementShortName">img_data_stream_0_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">img_data_stream_0_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/AXIvideo2Mat_U0/img_data_stream_0_V_write">
+                  <obj_property name="ElementShortName">img_data_stream_0_V_write</obj_property>
+                  <obj_property name="ObjectShortName">img_data_stream_0_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="img_data_stream_1_V_group">
+               <obj_property name="label">img_data_stream_1_V(img_input_data_strea_1_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/AXIvideo2Mat_U0/img_data_stream_1_V_blk_n">
+                  <obj_property name="ElementShortName">img_data_stream_1_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">img_data_stream_1_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/AXIvideo2Mat_U0/img_data_stream_1_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/AXIvideo2Mat_U0/img_data_stream_1_V_full_n">
+                  <obj_property name="ElementShortName">img_data_stream_1_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">img_data_stream_1_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/AXIvideo2Mat_U0/img_data_stream_1_V_write">
+                  <obj_property name="ElementShortName">img_data_stream_1_V_write</obj_property>
+                  <obj_property name="ObjectShortName">img_data_stream_1_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="img_data_stream_2_V_group">
+               <obj_property name="label">img_data_stream_2_V(img_input_data_strea_2_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/AXIvideo2Mat_U0/img_data_stream_2_V_blk_n">
+                  <obj_property name="ElementShortName">img_data_stream_2_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">img_data_stream_2_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/AXIvideo2Mat_U0/img_data_stream_2_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/AXIvideo2Mat_U0/img_data_stream_2_V_full_n">
+                  <obj_property name="ElementShortName">img_data_stream_2_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">img_data_stream_2_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/AXIvideo2Mat_U0/img_data_stream_2_V_write">
+                  <obj_property name="ElementShortName">img_data_stream_2_V_write</obj_property>
+                  <obj_property name="ObjectShortName">img_data_stream_2_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="img_cols_V_out_group">
+               <obj_property name="label">img_cols_V_out(img_input_cols_V_c20_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/AXIvideo2Mat_U0/img_cols_V_out_blk_n">
+                  <obj_property name="ElementShortName">img_cols_V_out_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">img_cols_V_out_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/AXIvideo2Mat_U0/img_cols_V_out_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/AXIvideo2Mat_U0/img_cols_V_out_full_n">
+                  <obj_property name="ElementShortName">img_cols_V_out_full_n</obj_property>
+                  <obj_property name="ObjectShortName">img_cols_V_out_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/AXIvideo2Mat_U0/img_cols_V_out_write">
+                  <obj_property name="ElementShortName">img_cols_V_out_write</obj_property>
+                  <obj_property name="ObjectShortName">img_cols_V_out_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Block_proc55_U0_group">
+         <obj_property name="label">Block_proc55_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="Block_proc55_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="img_input_rows_V_group">
+               <obj_property name="label">img_input_rows_V(img_input_rows_V_c20_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Block_proc55_U0/img_input_rows_V_blk_n">
+                  <obj_property name="ElementShortName">img_input_rows_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">img_input_rows_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Block_proc55_U0/img_input_rows_V_dout">
+                  <obj_property name="ElementShortName">img_input_rows_V_dout[11:0]</obj_property>
+                  <obj_property name="ObjectShortName">img_input_rows_V_dout[11:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Block_proc55_U0/img_input_rows_V_empty_n">
+                  <obj_property name="ElementShortName">img_input_rows_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">img_input_rows_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Block_proc55_U0/img_input_rows_V_read">
+                  <obj_property name="ElementShortName">img_input_rows_V_read</obj_property>
+                  <obj_property name="ObjectShortName">img_input_rows_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Block_proc55_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Block_proc55_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Block_proc55_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Block_proc55_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Block_proc55_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Block_proc55_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Loop_loop_height_pro_2_U0_group">
+         <obj_property name="label">Loop_loop_height_pro_2_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="Loop_loop_height_pro_2_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="img_input_cols_V_c20_group">
+               <obj_property name="label">img_input_cols_V_c20(img_input_cols_V_c20_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_2_U0/img_input_cols_V_c20_blk_n">
+                  <obj_property name="ElementShortName">img_input_cols_V_c20_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">img_input_cols_V_c20_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_2_U0/img_input_cols_V_c20_dout">
+                  <obj_property name="ElementShortName">img_input_cols_V_c20_dout[11:0]</obj_property>
+                  <obj_property name="ObjectShortName">img_input_cols_V_c20_dout[11:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_2_U0/img_input_cols_V_c20_empty_n">
+                  <obj_property name="ElementShortName">img_input_cols_V_c20_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">img_input_cols_V_c20_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_2_U0/img_input_cols_V_c20_read">
+                  <obj_property name="ElementShortName">img_input_cols_V_c20_read</obj_property>
+                  <obj_property name="ObjectShortName">img_input_cols_V_c20_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="img_input_data_strea_group">
+               <obj_property name="label">img_input_data_strea(img_input_data_strea_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_2_U0/img_input_data_strea_blk_n">
+                  <obj_property name="ElementShortName">img_input_data_strea_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">img_input_data_strea_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_2_U0/img_input_data_strea_dout">
+                  <obj_property name="ElementShortName">img_input_data_strea_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">img_input_data_strea_dout[7:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_2_U0/img_input_data_strea_empty_n">
+                  <obj_property name="ElementShortName">img_input_data_strea_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">img_input_data_strea_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_2_U0/img_input_data_strea_read">
+                  <obj_property name="ElementShortName">img_input_data_strea_read</obj_property>
+                  <obj_property name="ObjectShortName">img_input_data_strea_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="img_input_data_strea_1_group">
+               <obj_property name="label">img_input_data_strea_1(img_input_data_strea_1_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_2_U0/img_input_data_strea_1_blk_n">
+                  <obj_property name="ElementShortName">img_input_data_strea_1_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">img_input_data_strea_1_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_2_U0/img_input_data_strea_1_dout">
+                  <obj_property name="ElementShortName">img_input_data_strea_1_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">img_input_data_strea_1_dout[7:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_2_U0/img_input_data_strea_1_empty_n">
+                  <obj_property name="ElementShortName">img_input_data_strea_1_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">img_input_data_strea_1_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_2_U0/img_input_data_strea_1_read">
+                  <obj_property name="ElementShortName">img_input_data_strea_1_read</obj_property>
+                  <obj_property name="ObjectShortName">img_input_data_strea_1_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="img_input_data_strea_2_group">
+               <obj_property name="label">img_input_data_strea_2(img_input_data_strea_2_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_2_U0/img_input_data_strea_2_blk_n">
+                  <obj_property name="ElementShortName">img_input_data_strea_2_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">img_input_data_strea_2_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_2_U0/img_input_data_strea_2_dout">
+                  <obj_property name="ElementShortName">img_input_data_strea_2_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">img_input_data_strea_2_dout[7:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_2_U0/img_input_data_strea_2_empty_n">
+                  <obj_property name="ElementShortName">img_input_data_strea_2_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">img_input_data_strea_2_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_2_U0/img_input_data_strea_2_read">
+                  <obj_property name="ElementShortName">img_input_data_strea_2_read</obj_property>
+                  <obj_property name="ObjectShortName">img_input_data_strea_2_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Loop_loop_height_pro_2_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_2_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_2_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_2_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_2_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Loop_loop_height_pro_2_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="img_crop_data_stream_group">
+               <obj_property name="label">img_crop_data_stream(img_crop_data_stream_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_2_U0/img_crop_data_stream_blk_n">
+                  <obj_property name="ElementShortName">img_crop_data_stream_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">img_crop_data_stream_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_2_U0/img_crop_data_stream_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_2_U0/img_crop_data_stream_full_n">
+                  <obj_property name="ElementShortName">img_crop_data_stream_full_n</obj_property>
+                  <obj_property name="ObjectShortName">img_crop_data_stream_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_2_U0/img_crop_data_stream_write">
+                  <obj_property name="ElementShortName">img_crop_data_stream_write</obj_property>
+                  <obj_property name="ObjectShortName">img_crop_data_stream_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="img_crop_data_stream_1_group">
+               <obj_property name="label">img_crop_data_stream_1(img_crop_data_stream_1_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_2_U0/img_crop_data_stream_1_blk_n">
+                  <obj_property name="ElementShortName">img_crop_data_stream_1_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">img_crop_data_stream_1_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_2_U0/img_crop_data_stream_1_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_2_U0/img_crop_data_stream_1_full_n">
+                  <obj_property name="ElementShortName">img_crop_data_stream_1_full_n</obj_property>
+                  <obj_property name="ObjectShortName">img_crop_data_stream_1_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_2_U0/img_crop_data_stream_1_write">
+                  <obj_property name="ElementShortName">img_crop_data_stream_1_write</obj_property>
+                  <obj_property name="ObjectShortName">img_crop_data_stream_1_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="img_crop_data_stream_2_group">
+               <obj_property name="label">img_crop_data_stream_2(img_crop_data_stream_2_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_2_U0/img_crop_data_stream_2_blk_n">
+                  <obj_property name="ElementShortName">img_crop_data_stream_2_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">img_crop_data_stream_2_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_2_U0/img_crop_data_stream_2_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_2_U0/img_crop_data_stream_2_full_n">
+                  <obj_property name="ElementShortName">img_crop_data_stream_2_full_n</obj_property>
+                  <obj_property name="ObjectShortName">img_crop_data_stream_2_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_2_U0/img_crop_data_stream_2_write">
+                  <obj_property name="ElementShortName">img_crop_data_stream_2_write</obj_property>
+                  <obj_property name="ObjectShortName">img_crop_data_stream_2_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Loop_loop_height_pro_1_U0_group">
+         <obj_property name="label">Loop_loop_height_pro_1_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="Loop_loop_height_pro_1_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="img_crop_data_stream_0_V_group">
+               <obj_property name="label">img_crop_data_stream_0_V(img_crop_data_stream_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_1_U0/img_crop_data_stream_0_V_blk_n">
+                  <obj_property name="ElementShortName">img_crop_data_stream_0_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">img_crop_data_stream_0_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_1_U0/img_crop_data_stream_0_V_dout">
+                  <obj_property name="ElementShortName">img_crop_data_stream_0_V_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">img_crop_data_stream_0_V_dout[7:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_1_U0/img_crop_data_stream_0_V_empty_n">
+                  <obj_property name="ElementShortName">img_crop_data_stream_0_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">img_crop_data_stream_0_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_1_U0/img_crop_data_stream_0_V_read">
+                  <obj_property name="ElementShortName">img_crop_data_stream_0_V_read</obj_property>
+                  <obj_property name="ObjectShortName">img_crop_data_stream_0_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="img_crop_data_stream_1_V_group">
+               <obj_property name="label">img_crop_data_stream_1_V(img_crop_data_stream_1_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_1_U0/img_crop_data_stream_1_V_blk_n">
+                  <obj_property name="ElementShortName">img_crop_data_stream_1_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">img_crop_data_stream_1_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_1_U0/img_crop_data_stream_1_V_dout">
+                  <obj_property name="ElementShortName">img_crop_data_stream_1_V_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">img_crop_data_stream_1_V_dout[7:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_1_U0/img_crop_data_stream_1_V_empty_n">
+                  <obj_property name="ElementShortName">img_crop_data_stream_1_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">img_crop_data_stream_1_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_1_U0/img_crop_data_stream_1_V_read">
+                  <obj_property name="ElementShortName">img_crop_data_stream_1_V_read</obj_property>
+                  <obj_property name="ObjectShortName">img_crop_data_stream_1_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="img_crop_data_stream_2_V_group">
+               <obj_property name="label">img_crop_data_stream_2_V(img_crop_data_stream_2_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_1_U0/img_crop_data_stream_2_V_blk_n">
+                  <obj_property name="ElementShortName">img_crop_data_stream_2_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">img_crop_data_stream_2_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_1_U0/img_crop_data_stream_2_V_dout">
+                  <obj_property name="ElementShortName">img_crop_data_stream_2_V_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">img_crop_data_stream_2_V_dout[7:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_1_U0/img_crop_data_stream_2_V_empty_n">
+                  <obj_property name="ElementShortName">img_crop_data_stream_2_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">img_crop_data_stream_2_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_1_U0/img_crop_data_stream_2_V_read">
+                  <obj_property name="ElementShortName">img_crop_data_stream_2_V_read</obj_property>
+                  <obj_property name="ObjectShortName">img_crop_data_stream_2_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="lut_srgb_decode_group">
+               <obj_property name="label">lut_srgb_decode(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_1_U0/lut_srgb_decode_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_1_U0/lut_srgb_decode_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_1_U0/lut_srgb_decode_ce0">
+                  <obj_property name="ElementShortName">lut_srgb_decode_ce0</obj_property>
+                  <obj_property name="ObjectShortName">lut_srgb_decode_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Loop_loop_height_pro_1_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_1_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_1_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_1_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_1_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Loop_loop_height_pro_1_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="img_nogamma_data_stream_0_V_group">
+               <obj_property name="label">img_nogamma_data_stream_0_V(img_nogamma_data_str_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_1_U0/img_nogamma_data_stream_0_V_blk_n">
+                  <obj_property name="ElementShortName">img_nogamma_data_stream_0_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">img_nogamma_data_stream_0_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_1_U0/img_nogamma_data_stream_0_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_1_U0/img_nogamma_data_stream_0_V_full_n">
+                  <obj_property name="ElementShortName">img_nogamma_data_stream_0_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">img_nogamma_data_stream_0_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_1_U0/img_nogamma_data_stream_0_V_write">
+                  <obj_property name="ElementShortName">img_nogamma_data_stream_0_V_write</obj_property>
+                  <obj_property name="ObjectShortName">img_nogamma_data_stream_0_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="img_nogamma_data_stream_1_V_group">
+               <obj_property name="label">img_nogamma_data_stream_1_V(img_nogamma_data_str_1_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_1_U0/img_nogamma_data_stream_1_V_blk_n">
+                  <obj_property name="ElementShortName">img_nogamma_data_stream_1_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">img_nogamma_data_stream_1_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_1_U0/img_nogamma_data_stream_1_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_1_U0/img_nogamma_data_stream_1_V_full_n">
+                  <obj_property name="ElementShortName">img_nogamma_data_stream_1_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">img_nogamma_data_stream_1_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_1_U0/img_nogamma_data_stream_1_V_write">
+                  <obj_property name="ElementShortName">img_nogamma_data_stream_1_V_write</obj_property>
+                  <obj_property name="ObjectShortName">img_nogamma_data_stream_1_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="img_nogamma_data_stream_2_V_group">
+               <obj_property name="label">img_nogamma_data_stream_2_V(img_nogamma_data_str_2_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_1_U0/img_nogamma_data_stream_2_V_blk_n">
+                  <obj_property name="ElementShortName">img_nogamma_data_stream_2_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">img_nogamma_data_stream_2_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_1_U0/img_nogamma_data_stream_2_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_1_U0/img_nogamma_data_stream_2_V_full_n">
+                  <obj_property name="ElementShortName">img_nogamma_data_stream_2_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">img_nogamma_data_stream_2_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_1_U0/img_nogamma_data_stream_2_V_write">
+                  <obj_property name="ElementShortName">img_nogamma_data_stream_2_V_write</obj_property>
+                  <obj_property name="ObjectShortName">img_nogamma_data_stream_2_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="video_scale_U0_group">
+         <obj_property name="label">video_scale_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="video_scale_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="src_data_stream_0_V_group">
+               <obj_property name="label">src_data_stream_0_V(img_nogamma_data_str_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/video_scale_U0/src_data_stream_0_V_blk_n">
+                  <obj_property name="ElementShortName">src_data_stream_0_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">src_data_stream_0_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/video_scale_U0/src_data_stream_0_V_dout">
+                  <obj_property name="ElementShortName">src_data_stream_0_V_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">src_data_stream_0_V_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/video_scale_U0/src_data_stream_0_V_empty_n">
+                  <obj_property name="ElementShortName">src_data_stream_0_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">src_data_stream_0_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/video_scale_U0/src_data_stream_0_V_read">
+                  <obj_property name="ElementShortName">src_data_stream_0_V_read</obj_property>
+                  <obj_property name="ObjectShortName">src_data_stream_0_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="src_data_stream_1_V_group">
+               <obj_property name="label">src_data_stream_1_V(img_nogamma_data_str_1_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/video_scale_U0/src_data_stream_1_V_blk_n">
+                  <obj_property name="ElementShortName">src_data_stream_1_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">src_data_stream_1_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/video_scale_U0/src_data_stream_1_V_dout">
+                  <obj_property name="ElementShortName">src_data_stream_1_V_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">src_data_stream_1_V_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/video_scale_U0/src_data_stream_1_V_empty_n">
+                  <obj_property name="ElementShortName">src_data_stream_1_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">src_data_stream_1_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/video_scale_U0/src_data_stream_1_V_read">
+                  <obj_property name="ElementShortName">src_data_stream_1_V_read</obj_property>
+                  <obj_property name="ObjectShortName">src_data_stream_1_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="src_data_stream_2_V_group">
+               <obj_property name="label">src_data_stream_2_V(img_nogamma_data_str_2_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/video_scale_U0/src_data_stream_2_V_blk_n">
+                  <obj_property name="ElementShortName">src_data_stream_2_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">src_data_stream_2_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/video_scale_U0/src_data_stream_2_V_dout">
+                  <obj_property name="ElementShortName">src_data_stream_2_V_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">src_data_stream_2_V_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/video_scale_U0/src_data_stream_2_V_empty_n">
+                  <obj_property name="ElementShortName">src_data_stream_2_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">src_data_stream_2_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/video_scale_U0/src_data_stream_2_V_read">
+                  <obj_property name="ElementShortName">src_data_stream_2_V_read</obj_property>
+                  <obj_property name="ObjectShortName">src_data_stream_2_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="video_scale_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/video_scale_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/video_scale_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/video_scale_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/video_scale_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="video_scale_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="dst_data_stream_0_V_group">
+               <obj_property name="label">dst_data_stream_0_V(img_scaled_data_stre_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/video_scale_U0/dst_data_stream_0_V_blk_n">
+                  <obj_property name="ElementShortName">dst_data_stream_0_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">dst_data_stream_0_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/video_scale_U0/dst_data_stream_0_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/video_scale_U0/dst_data_stream_0_V_full_n">
+                  <obj_property name="ElementShortName">dst_data_stream_0_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">dst_data_stream_0_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/video_scale_U0/dst_data_stream_0_V_write">
+                  <obj_property name="ElementShortName">dst_data_stream_0_V_write</obj_property>
+                  <obj_property name="ObjectShortName">dst_data_stream_0_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="dst_data_stream_1_V_group">
+               <obj_property name="label">dst_data_stream_1_V(img_scaled_data_stre_1_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/video_scale_U0/dst_data_stream_1_V_blk_n">
+                  <obj_property name="ElementShortName">dst_data_stream_1_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">dst_data_stream_1_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/video_scale_U0/dst_data_stream_1_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/video_scale_U0/dst_data_stream_1_V_full_n">
+                  <obj_property name="ElementShortName">dst_data_stream_1_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">dst_data_stream_1_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/video_scale_U0/dst_data_stream_1_V_write">
+                  <obj_property name="ElementShortName">dst_data_stream_1_V_write</obj_property>
+                  <obj_property name="ObjectShortName">dst_data_stream_1_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="dst_data_stream_2_V_group">
+               <obj_property name="label">dst_data_stream_2_V(img_scaled_data_stre_2_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/video_scale_U0/dst_data_stream_2_V_blk_n">
+                  <obj_property name="ElementShortName">dst_data_stream_2_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">dst_data_stream_2_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/video_scale_U0/dst_data_stream_2_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/video_scale_U0/dst_data_stream_2_V_full_n">
+                  <obj_property name="ElementShortName">dst_data_stream_2_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">dst_data_stream_2_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/video_scale_U0/dst_data_stream_2_V_write">
+                  <obj_property name="ElementShortName">dst_data_stream_2_V_write</obj_property>
+                  <obj_property name="ObjectShortName">dst_data_stream_2_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="brightness_color_adj_U0_group">
+         <obj_property name="label">brightness_color_adj_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="brightness_color_adj_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="src_data_stream_0_V_group">
+               <obj_property name="label">src_data_stream_0_V(img_scaled_data_stre_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/brightness_color_adj_U0/src_data_stream_0_V_blk_n">
+                  <obj_property name="ElementShortName">src_data_stream_0_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">src_data_stream_0_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/brightness_color_adj_U0/src_data_stream_0_V_dout">
+                  <obj_property name="ElementShortName">src_data_stream_0_V_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">src_data_stream_0_V_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/brightness_color_adj_U0/src_data_stream_0_V_empty_n">
+                  <obj_property name="ElementShortName">src_data_stream_0_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">src_data_stream_0_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/brightness_color_adj_U0/src_data_stream_0_V_read">
+                  <obj_property name="ElementShortName">src_data_stream_0_V_read</obj_property>
+                  <obj_property name="ObjectShortName">src_data_stream_0_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="src_data_stream_1_V_group">
+               <obj_property name="label">src_data_stream_1_V(img_scaled_data_stre_1_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/brightness_color_adj_U0/src_data_stream_1_V_blk_n">
+                  <obj_property name="ElementShortName">src_data_stream_1_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">src_data_stream_1_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/brightness_color_adj_U0/src_data_stream_1_V_dout">
+                  <obj_property name="ElementShortName">src_data_stream_1_V_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">src_data_stream_1_V_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/brightness_color_adj_U0/src_data_stream_1_V_empty_n">
+                  <obj_property name="ElementShortName">src_data_stream_1_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">src_data_stream_1_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/brightness_color_adj_U0/src_data_stream_1_V_read">
+                  <obj_property name="ElementShortName">src_data_stream_1_V_read</obj_property>
+                  <obj_property name="ObjectShortName">src_data_stream_1_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="src_data_stream_2_V_group">
+               <obj_property name="label">src_data_stream_2_V(img_scaled_data_stre_2_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/brightness_color_adj_U0/src_data_stream_2_V_blk_n">
+                  <obj_property name="ElementShortName">src_data_stream_2_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">src_data_stream_2_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/brightness_color_adj_U0/src_data_stream_2_V_dout">
+                  <obj_property name="ElementShortName">src_data_stream_2_V_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">src_data_stream_2_V_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/brightness_color_adj_U0/src_data_stream_2_V_empty_n">
+                  <obj_property name="ElementShortName">src_data_stream_2_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">src_data_stream_2_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/brightness_color_adj_U0/src_data_stream_2_V_read">
+                  <obj_property name="ElementShortName">src_data_stream_2_V_read</obj_property>
+                  <obj_property name="ObjectShortName">src_data_stream_2_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="lut_perceptual_brigh_1_group">
+               <obj_property name="label">lut_perceptual_brigh_1(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/brightness_color_adj_U0/lut_perceptual_brigh_1_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/brightness_color_adj_U0/lut_perceptual_brigh_1_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/brightness_color_adj_U0/lut_perceptual_brigh_1_ce0">
+                  <obj_property name="ElementShortName">lut_perceptual_brigh_1_ce0</obj_property>
+                  <obj_property name="ObjectShortName">lut_perceptual_brigh_1_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="lut_perceptual_brigh_group">
+               <obj_property name="label">lut_perceptual_brigh(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/brightness_color_adj_U0/lut_perceptual_brigh_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/brightness_color_adj_U0/lut_perceptual_brigh_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/brightness_color_adj_U0/lut_perceptual_brigh_ce0">
+                  <obj_property name="ElementShortName">lut_perceptual_brigh_ce0</obj_property>
+                  <obj_property name="ObjectShortName">lut_perceptual_brigh_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="lut_perceptual_brigh_2_group">
+               <obj_property name="label">lut_perceptual_brigh_2(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/brightness_color_adj_U0/lut_perceptual_brigh_2_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/brightness_color_adj_U0/lut_perceptual_brigh_2_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/brightness_color_adj_U0/lut_perceptual_brigh_2_ce0">
+                  <obj_property name="ElementShortName">lut_perceptual_brigh_2_ce0</obj_property>
+                  <obj_property name="ObjectShortName">lut_perceptual_brigh_2_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="brightness_color_adj_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/brightness_color_adj_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/brightness_color_adj_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/brightness_color_adj_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/brightness_color_adj_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="brightness_color_adj_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="dst_data_stream_0_V_group">
+               <obj_property name="label">dst_data_stream_0_V(img_adjusted_data_st_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/brightness_color_adj_U0/dst_data_stream_0_V_blk_n">
+                  <obj_property name="ElementShortName">dst_data_stream_0_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">dst_data_stream_0_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/brightness_color_adj_U0/dst_data_stream_0_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/brightness_color_adj_U0/dst_data_stream_0_V_full_n">
+                  <obj_property name="ElementShortName">dst_data_stream_0_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">dst_data_stream_0_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/brightness_color_adj_U0/dst_data_stream_0_V_write">
+                  <obj_property name="ElementShortName">dst_data_stream_0_V_write</obj_property>
+                  <obj_property name="ObjectShortName">dst_data_stream_0_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="dst_data_stream_1_V_group">
+               <obj_property name="label">dst_data_stream_1_V(img_adjusted_data_st_1_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/brightness_color_adj_U0/dst_data_stream_1_V_blk_n">
+                  <obj_property name="ElementShortName">dst_data_stream_1_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">dst_data_stream_1_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/brightness_color_adj_U0/dst_data_stream_1_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/brightness_color_adj_U0/dst_data_stream_1_V_full_n">
+                  <obj_property name="ElementShortName">dst_data_stream_1_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">dst_data_stream_1_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/brightness_color_adj_U0/dst_data_stream_1_V_write">
+                  <obj_property name="ElementShortName">dst_data_stream_1_V_write</obj_property>
+                  <obj_property name="ObjectShortName">dst_data_stream_1_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="dst_data_stream_2_V_group">
+               <obj_property name="label">dst_data_stream_2_V(img_adjusted_data_st_2_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/brightness_color_adj_U0/dst_data_stream_2_V_blk_n">
+                  <obj_property name="ElementShortName">dst_data_stream_2_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">dst_data_stream_2_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/brightness_color_adj_U0/dst_data_stream_2_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/brightness_color_adj_U0/dst_data_stream_2_V_full_n">
+                  <obj_property name="ElementShortName">dst_data_stream_2_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">dst_data_stream_2_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/brightness_color_adj_U0/dst_data_stream_2_V_write">
+                  <obj_property name="ElementShortName">dst_data_stream_2_V_write</obj_property>
+                  <obj_property name="ObjectShortName">dst_data_stream_2_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Loop_loop_height_pro_U0_group">
+         <obj_property name="label">Loop_loop_height_pro_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="Loop_loop_height_pro_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="img_adjusted_data_stream_0_V_group">
+               <obj_property name="label">img_adjusted_data_stream_0_V(img_adjusted_data_st_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_U0/img_adjusted_data_stream_0_V_blk_n">
+                  <obj_property name="ElementShortName">img_adjusted_data_stream_0_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">img_adjusted_data_stream_0_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_U0/img_adjusted_data_stream_0_V_dout">
+                  <obj_property name="ElementShortName">img_adjusted_data_stream_0_V_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">img_adjusted_data_stream_0_V_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_U0/img_adjusted_data_stream_0_V_empty_n">
+                  <obj_property name="ElementShortName">img_adjusted_data_stream_0_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">img_adjusted_data_stream_0_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_U0/img_adjusted_data_stream_0_V_read">
+                  <obj_property name="ElementShortName">img_adjusted_data_stream_0_V_read</obj_property>
+                  <obj_property name="ObjectShortName">img_adjusted_data_stream_0_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="img_adjusted_data_stream_1_V_group">
+               <obj_property name="label">img_adjusted_data_stream_1_V(img_adjusted_data_st_1_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_U0/img_adjusted_data_stream_1_V_blk_n">
+                  <obj_property name="ElementShortName">img_adjusted_data_stream_1_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">img_adjusted_data_stream_1_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_U0/img_adjusted_data_stream_1_V_dout">
+                  <obj_property name="ElementShortName">img_adjusted_data_stream_1_V_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">img_adjusted_data_stream_1_V_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_U0/img_adjusted_data_stream_1_V_empty_n">
+                  <obj_property name="ElementShortName">img_adjusted_data_stream_1_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">img_adjusted_data_stream_1_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_U0/img_adjusted_data_stream_1_V_read">
+                  <obj_property name="ElementShortName">img_adjusted_data_stream_1_V_read</obj_property>
+                  <obj_property name="ObjectShortName">img_adjusted_data_stream_1_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="img_adjusted_data_stream_2_V_group">
+               <obj_property name="label">img_adjusted_data_stream_2_V(img_adjusted_data_st_2_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_U0/img_adjusted_data_stream_2_V_blk_n">
+                  <obj_property name="ElementShortName">img_adjusted_data_stream_2_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">img_adjusted_data_stream_2_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_U0/img_adjusted_data_stream_2_V_dout">
+                  <obj_property name="ElementShortName">img_adjusted_data_stream_2_V_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">img_adjusted_data_stream_2_V_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_U0/img_adjusted_data_stream_2_V_empty_n">
+                  <obj_property name="ElementShortName">img_adjusted_data_stream_2_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">img_adjusted_data_stream_2_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_U0/img_adjusted_data_stream_2_V_read">
+                  <obj_property name="ElementShortName">img_adjusted_data_stream_2_V_read</obj_property>
+                  <obj_property name="ObjectShortName">img_adjusted_data_stream_2_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Loop_loop_height_pro_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Loop_loop_height_pro_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="img_out_data_stream_0_V_group">
+               <obj_property name="label">img_out_data_stream_0_V(img_out_data_stream_s_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_U0/img_out_data_stream_0_V_blk_n">
+                  <obj_property name="ElementShortName">img_out_data_stream_0_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">img_out_data_stream_0_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_U0/img_out_data_stream_0_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_U0/img_out_data_stream_0_V_full_n">
+                  <obj_property name="ElementShortName">img_out_data_stream_0_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">img_out_data_stream_0_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_U0/img_out_data_stream_0_V_write">
+                  <obj_property name="ElementShortName">img_out_data_stream_0_V_write</obj_property>
+                  <obj_property name="ObjectShortName">img_out_data_stream_0_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="img_out_data_stream_1_V_group">
+               <obj_property name="label">img_out_data_stream_1_V(img_out_data_stream_1_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_U0/img_out_data_stream_1_V_blk_n">
+                  <obj_property name="ElementShortName">img_out_data_stream_1_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">img_out_data_stream_1_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_U0/img_out_data_stream_1_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_U0/img_out_data_stream_1_V_full_n">
+                  <obj_property name="ElementShortName">img_out_data_stream_1_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">img_out_data_stream_1_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_U0/img_out_data_stream_1_V_write">
+                  <obj_property name="ElementShortName">img_out_data_stream_1_V_write</obj_property>
+                  <obj_property name="ObjectShortName">img_out_data_stream_1_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="img_out_data_stream_2_V_group">
+               <obj_property name="label">img_out_data_stream_2_V(img_out_data_stream_2_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_U0/img_out_data_stream_2_V_blk_n">
+                  <obj_property name="ElementShortName">img_out_data_stream_2_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">img_out_data_stream_2_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_U0/img_out_data_stream_2_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_U0/img_out_data_stream_2_V_full_n">
+                  <obj_property name="ElementShortName">img_out_data_stream_2_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">img_out_data_stream_2_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Loop_loop_height_pro_U0/img_out_data_stream_2_V_write">
+                  <obj_property name="ElementShortName">img_out_data_stream_2_V_write</obj_property>
+                  <obj_property name="ObjectShortName">img_out_data_stream_2_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Mat2AXIvideo_U0_group">
+         <obj_property name="label">Mat2AXIvideo_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="Mat2AXIvideo_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="img_data_stream_0_V_group">
+               <obj_property name="label">img_data_stream_0_V(img_out_data_stream_s_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Mat2AXIvideo_U0/img_data_stream_0_V_blk_n">
+                  <obj_property name="ElementShortName">img_data_stream_0_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">img_data_stream_0_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Mat2AXIvideo_U0/img_data_stream_0_V_dout">
+                  <obj_property name="ElementShortName">img_data_stream_0_V_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">img_data_stream_0_V_dout[7:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Mat2AXIvideo_U0/img_data_stream_0_V_empty_n">
+                  <obj_property name="ElementShortName">img_data_stream_0_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">img_data_stream_0_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Mat2AXIvideo_U0/img_data_stream_0_V_read">
+                  <obj_property name="ElementShortName">img_data_stream_0_V_read</obj_property>
+                  <obj_property name="ObjectShortName">img_data_stream_0_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="img_data_stream_1_V_group">
+               <obj_property name="label">img_data_stream_1_V(img_out_data_stream_1_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Mat2AXIvideo_U0/img_data_stream_1_V_blk_n">
+                  <obj_property name="ElementShortName">img_data_stream_1_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">img_data_stream_1_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Mat2AXIvideo_U0/img_data_stream_1_V_dout">
+                  <obj_property name="ElementShortName">img_data_stream_1_V_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">img_data_stream_1_V_dout[7:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Mat2AXIvideo_U0/img_data_stream_1_V_empty_n">
+                  <obj_property name="ElementShortName">img_data_stream_1_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">img_data_stream_1_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Mat2AXIvideo_U0/img_data_stream_1_V_read">
+                  <obj_property name="ElementShortName">img_data_stream_1_V_read</obj_property>
+                  <obj_property name="ObjectShortName">img_data_stream_1_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="img_data_stream_2_V_group">
+               <obj_property name="label">img_data_stream_2_V(img_out_data_stream_2_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Mat2AXIvideo_U0/img_data_stream_2_V_blk_n">
+                  <obj_property name="ElementShortName">img_data_stream_2_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">img_data_stream_2_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Mat2AXIvideo_U0/img_data_stream_2_V_dout">
+                  <obj_property name="ElementShortName">img_data_stream_2_V_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">img_data_stream_2_V_dout[7:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Mat2AXIvideo_U0/img_data_stream_2_V_empty_n">
+                  <obj_property name="ElementShortName">img_data_stream_2_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">img_data_stream_2_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Mat2AXIvideo_U0/img_data_stream_2_V_read">
+                  <obj_property name="ElementShortName">img_data_stream_2_V_read</obj_property>
+                  <obj_property name="ObjectShortName">img_data_stream_2_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Mat2AXIvideo_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Mat2AXIvideo_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Mat2AXIvideo_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Mat2AXIvideo_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_hls_video_processor_top/AESL_inst_hls_video_processor/Mat2AXIvideo_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Mat2AXIvideo_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

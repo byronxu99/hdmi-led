@@ -1,0 +1,21 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_1/ip/design_1_proc_sys_reset_0_0/sim/design_1_proc_sys_reset_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_dvi2rgb_1_0/src/ila_refclk/sim/ila_refclk.vhd" \
+"../../../bd/design_1/ip/design_1_dvi2rgb_1_0/src/ila_pixclk/sim/ila_pixclk.vhd" \
+"../../../../hdmi_led.srcs/sources_1/bd/design_1/ipshared/80ae/src/SyncBase.vhd" \
+"../../../../hdmi_led.srcs/sources_1/bd/design_1/ipshared/80ae/src/EEPROM_8b.vhd" \
+"../../../../hdmi_led.srcs/sources_1/bd/design_1/ipshared/80ae/src/TWI_SlaveCtl.vhd" \
+"../../../../hdmi_led.srcs/sources_1/bd/design_1/ipshared/80ae/src/GlitchFilter.vhd" \
+"../../../../hdmi_led.srcs/sources_1/bd/design_1/ipshared/80ae/src/SyncAsync.vhd" \
+"../../../../hdmi_led.srcs/sources_1/bd/design_1/ipshared/80ae/src/DVI_Constants.vhd" \
+"../../../../hdmi_led.srcs/sources_1/bd/design_1/ipshared/80ae/src/SyncAsyncReset.vhd" \
+"../../../../hdmi_led.srcs/sources_1/bd/design_1/ipshared/80ae/src/PhaseAlign.vhd" \
+"../../../../hdmi_led.srcs/sources_1/bd/design_1/ipshared/80ae/src/InputSERDES.vhd" \
+"../../../../hdmi_led.srcs/sources_1/bd/design_1/ipshared/80ae/src/ChannelBond.vhd" \
+"../../../../hdmi_led.srcs/sources_1/bd/design_1/ipshared/80ae/src/ResyncToBUFG.vhd" \
+"../../../../hdmi_led.srcs/sources_1/bd/design_1/ipshared/80ae/src/TMDS_Decoder.vhd" \
+"../../../../hdmi_led.srcs/sources_1/bd/design_1/ipshared/80ae/src/TMDS_Clocking.vhd" \
+"../../../../hdmi_led.srcs/sources_1/bd/design_1/ipshared/80ae/src/dvi2rgb.vhd" \
+"../../../bd/design_1/ip/design_1_dvi2rgb_1_0/sim/design_1_dvi2rgb_1_0.vhd" \
+
+nosort

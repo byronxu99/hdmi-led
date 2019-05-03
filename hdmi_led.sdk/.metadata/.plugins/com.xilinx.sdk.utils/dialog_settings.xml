@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="C:\Users\byronxu\Documents\6.S193\hdmi_led\hdmi_led.sdk\design_1_wrapper_hw_platform_0" key="bootgen_files_selection"/>
+	<item value="C:\Users\byronxu\Documents\6.S193\hdmi_led\hdmi_led.sdk\design_1_wrapper_hw_platform_0" key="program_fpga_view_bit_bmm_browse_key"/>
+	<item value="C:\Users\byronxu\Documents\6.S193\hdmi_led\hdmi_led.sdk\fsbl\Release" key="zynq_flash_files_selection"/>
+	<item value="C:\Users\byronxu\Documents\6.S193\hdmi_led\hdmi_led.sdk\fsbl\Release" key="last_stored_selection"/>
+</section>

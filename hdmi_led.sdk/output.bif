@@ -1,0 +1,6 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]C:\Users\byronxu\Documents\6.S193\hdmi_led\hdmi_led.sdk\fsbl\Release\fsbl.elf
+	C:\Users\byronxu\Documents\6.S193\hdmi_led\hdmi_led.sdk\design_1_wrapper_hw_platform_0\design_1_wrapper.bit
+}

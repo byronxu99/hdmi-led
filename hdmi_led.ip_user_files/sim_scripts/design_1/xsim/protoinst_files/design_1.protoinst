@@ -1,0 +1,65 @@
+{
+	"version": "1.0",
+	"modules": {
+		"design_1": {
+			"proto_instances": {
+				"/hls_video_processor_0/stream_in": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"TDATA": { "actual": "stream_in_TDATA"},
+						"TDEST": { "actual": "stream_in_TDEST"},
+						"TID": { "actual": "stream_in_TID"},
+						"TKEEP": { "actual": "stream_in_TKEEP"},
+						"TLAST": { "actual": "stream_in_TLAST"},
+						"TREADY": { "actual": "stream_in_TREADY"},
+						"TSTRB": { "actual": "stream_in_TSTRB"},
+						"TUSER": { "actual": "stream_in_TUSER"},
+						"TVALID": { "actual": "stream_in_TVALID"}
+					}
+				},
+				"/hls_video_processor_0/stream_out": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"TDATA": { "actual": "stream_out_TDATA"},
+						"TDEST": { "actual": "stream_out_TDEST"},
+						"TID": { "actual": "stream_out_TID"},
+						"TKEEP": { "actual": "stream_out_TKEEP"},
+						"TLAST": { "actual": "stream_out_TLAST"},
+						"TREADY": { "actual": "stream_out_TREADY"},
+						"TSTRB": { "actual": "stream_out_TSTRB"},
+						"TUSER": { "actual": "stream_out_TUSER"},
+						"TVALID": { "actual": "stream_out_TVALID"}
+					}
+				},
+				"/triple_buffer_v1_0_0/s00_axis": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "s00_axis_aclk"},
+						"ARESETN": { "actual": "s00_axis_aresetn"},
+						"TDATA": { "actual": "s00_axis_tdata"},
+						"TLAST": { "actual": "s00_axis_tlast"},
+						"TREADY": { "actual": "s00_axis_tready"},
+						"TSTRB": { "actual": "s00_axis_tstrb"},
+						"TUSER": { "actual": "s00_axis_tuser"},
+						"TVALID": { "actual": "s00_axis_tvalid"}
+					}
+				},
+				"/v_vid_in_axi4s_0/video_out": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "aclk"},
+						"TDATA": { "actual": "m_axis_video_tdata"},
+						"TLAST": { "actual": "m_axis_video_tlast"},
+						"TREADY": { "actual": "m_axis_video_tready"},
+						"TUSER": { "actual": "m_axis_video_tuser"},
+						"TVALID": { "actual": "m_axis_video_tvalid"}
+					}
+				}
+			}
+		}
+	}
+}

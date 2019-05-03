@@ -1,0 +1,201 @@
+
+
+================================================================
+== Vivado HLS Report for 'brightness_color_adj'
+================================================================
+* Date:           Thu Apr 25 22:46:35 2019
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        hls_video_processor
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   6.60|     5.745|        0.82|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-------+-------+-------+-------+---------+
+    |    Latency    |    Interval   | Pipeline|
+    |  min  |  max  |  min  |  max  |   Type  |
+    +-------+-------+-------+-------+---------+
+    |  14492|  14492|  14492|  14492|   none  |
+    +-------+-------+-------+-------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------+-------+-------+----------+-----------+-----------+------+----------+
+        |               |    Latency    | Iteration|  Initiation Interval  | Trip |          |
+        |   Loop Name   |  min  |  max  |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------+-------+-------+----------+-----------+-----------+------+----------+
+        |- loop_height  |  14490|  14490|       483|          -|          -|    30|    no    |
+        | + loop_width  |    480|    480|         8|          8|         32|    60|    yes   |
+        +---------------+-------+-------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       0|     76|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|      6|     498|    147|
+|Memory           |        0|      -|      25|      7|
+|Multiplexer      |        -|      -|       -|    146|
+|Register         |        -|      -|     231|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      6|     754|    376|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      2|   ~0   |   ~0  |
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    +--------------------------+----------------------+---------+-------+-----+----+
+    |         Instance         |        Module        | BRAM_18K| DSP48E|  FF | LUT|
+    +--------------------------+----------------------+---------+-------+-----+----+
+    |hls_video_processibs_U40  |hls_video_processibs  |        0|      2|  166|  49|
+    |hls_video_processibs_U41  |hls_video_processibs  |        0|      2|  166|  49|
+    |hls_video_processibs_U42  |hls_video_processibs  |        0|      2|  166|  49|
+    +--------------------------+----------------------+---------+-------+-----+----+
+    |Total                     |                      |        0|      6|  498| 147|
+    +--------------------------+----------------------+---------+-------+-----+----+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    +--------------------------+----------------------+---------+---+----+------+-----+------+-------------+
+    |          Memory          |        Module        | BRAM_18K| FF| LUT| Words| Bits| Banks| W*Bits*Banks|
+    +--------------------------+----------------------+---------+---+----+------+-----+------+-------------+
+    |lut_perceptual_brigh_1_U  |brightness_color_fYi  |        0|  9|   3|    16|    9|     1|          144|
+    |lut_perceptual_brigh_U    |brightness_color_g8j  |        0|  8|   2|    16|    8|     1|          128|
+    |lut_perceptual_brigh_2_U  |brightness_color_hbi  |        0|  8|   2|    16|    8|     1|          128|
+    +--------------------------+----------------------+---------+---+----+------+-----+------+-------------+
+    |Total                     |                      |        0| 25|   7|    48|   25|     3|          400|
+    +--------------------------+----------------------+---------+---+----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------+----------+-------+---+----+------------+------------+
+    |    Variable Name    | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------+----------+-------+---+----+------------+------------+
+    |c_V_fu_263_p2        |     +    |      0|  0|  15|           6|           1|
+    |r_V_fu_251_p2        |     +    |      0|  0|  15|           5|           1|
+    |exitcond4_fu_245_p2  |   icmp   |      0|  0|  11|           5|           3|
+    |exitcond_fu_257_p2   |   icmp   |      0|  0|  11|           6|           4|
+    |ap_block_state1      |    or    |      0|  0|   2|           1|           1|
+    |ap_block_state11     |    or    |      0|  0|   2|           1|           1|
+    |ap_block_state5      |    or    |      0|  0|   2|           1|           1|
+    |scale_b2_fu_229_p3   |  select  |      0|  0|   9|           1|           9|
+    |scale_g2_fu_221_p3   |  select  |      0|  0|   9|           1|           9|
+    +---------------------+----------+-------+---+----+------------+------------+
+    |Total                |          |      0|  0|  76|          27|          30|
+    +---------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +---------------------------+----+-----------+-----+-----------+
+    |            Name           | LUT| Input Size| Bits| Total Bits|
+    +---------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                  |  56|         13|    1|         13|
+    |ap_done                    |   9|          2|    1|          2|
+    |dst_data_stream_0_V_blk_n  |   9|          2|    1|          2|
+    |dst_data_stream_1_V_blk_n  |   9|          2|    1|          2|
+    |dst_data_stream_2_V_blk_n  |   9|          2|    1|          2|
+    |real_start                 |   9|          2|    1|          2|
+    |src_data_stream_0_V_blk_n  |   9|          2|    1|          2|
+    |src_data_stream_1_V_blk_n  |   9|          2|    1|          2|
+    |src_data_stream_2_V_blk_n  |   9|          2|    1|          2|
+    |t_V_3_reg_191              |   9|          2|    6|         12|
+    |t_V_reg_180                |   9|          2|    5|         10|
+    +---------------------------+----+-----------+-----+-----------+
+    |Total                      | 146|         33|   20|         51|
+    +---------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------+----+----+-----+-----------+
+    |          Name         | FF | LUT| Bits| Const Bits|
+    +-----------------------+----+----+-----+-----------+
+    |ap_CS_fsm              |  12|   0|   12|          0|
+    |ap_done_reg            |   1|   0|    1|          0|
+    |c_V_reg_365            |   6|   0|    6|          0|
+    |r_V_reg_357            |   5|   0|    5|          0|
+    |scale_b2_cast_reg_348  |   9|   0|   32|         23|
+    |scale_g2_cast_reg_343  |   9|   0|   32|         23|
+    |scale_r_cast_reg_338   |   9|   0|   32|         23|
+    |start_once_reg         |   1|   0|    1|          0|
+    |t_V_3_reg_191          |   6|   0|    6|          0|
+    |t_V_reg_180            |   5|   0|    5|          0|
+    |tmp_19_reg_385         |  24|   0|   24|          0|
+    |tmp_22_reg_390         |  24|   0|   24|          0|
+    |tmp_25_reg_395         |  24|   0|   24|          0|
+    |tmp_31_reg_380         |  32|   0|   32|          0|
+    |tmp_32_reg_370         |  32|   0|   32|          0|
+    |tmp_33_reg_375         |  32|   0|   32|          0|
+    +-----------------------+----+----+-----+-----------+
+    |Total                  | 231|   0|  300|         69|
+    +-----------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------------+-----+-----+------------+----------------------+--------------+
+|          RTL Ports          | Dir | Bits|  Protocol  |     Source Object    |    C Type    |
++-----------------------------+-----+-----+------------+----------------------+--------------+
+|ap_clk                       |  in |    1| ap_ctrl_hs | brightness_color_adj | return value |
+|ap_rst                       |  in |    1| ap_ctrl_hs | brightness_color_adj | return value |
+|ap_start                     |  in |    1| ap_ctrl_hs | brightness_color_adj | return value |
+|start_full_n                 |  in |    1| ap_ctrl_hs | brightness_color_adj | return value |
+|ap_done                      | out |    1| ap_ctrl_hs | brightness_color_adj | return value |
+|ap_continue                  |  in |    1| ap_ctrl_hs | brightness_color_adj | return value |
+|ap_idle                      | out |    1| ap_ctrl_hs | brightness_color_adj | return value |
+|ap_ready                     | out |    1| ap_ctrl_hs | brightness_color_adj | return value |
+|start_out                    | out |    1| ap_ctrl_hs | brightness_color_adj | return value |
+|start_write                  | out |    1| ap_ctrl_hs | brightness_color_adj | return value |
+|src_data_stream_0_V_dout     |  in |   32|   ap_fifo  |  src_data_stream_0_V |    pointer   |
+|src_data_stream_0_V_empty_n  |  in |    1|   ap_fifo  |  src_data_stream_0_V |    pointer   |
+|src_data_stream_0_V_read     | out |    1|   ap_fifo  |  src_data_stream_0_V |    pointer   |
+|src_data_stream_1_V_dout     |  in |   32|   ap_fifo  |  src_data_stream_1_V |    pointer   |
+|src_data_stream_1_V_empty_n  |  in |    1|   ap_fifo  |  src_data_stream_1_V |    pointer   |
+|src_data_stream_1_V_read     | out |    1|   ap_fifo  |  src_data_stream_1_V |    pointer   |
+|src_data_stream_2_V_dout     |  in |   32|   ap_fifo  |  src_data_stream_2_V |    pointer   |
+|src_data_stream_2_V_empty_n  |  in |    1|   ap_fifo  |  src_data_stream_2_V |    pointer   |
+|src_data_stream_2_V_read     | out |    1|   ap_fifo  |  src_data_stream_2_V |    pointer   |
+|dst_data_stream_0_V_din      | out |   32|   ap_fifo  |  dst_data_stream_0_V |    pointer   |
+|dst_data_stream_0_V_full_n   |  in |    1|   ap_fifo  |  dst_data_stream_0_V |    pointer   |
+|dst_data_stream_0_V_write    | out |    1|   ap_fifo  |  dst_data_stream_0_V |    pointer   |
+|dst_data_stream_1_V_din      | out |   32|   ap_fifo  |  dst_data_stream_1_V |    pointer   |
+|dst_data_stream_1_V_full_n   |  in |    1|   ap_fifo  |  dst_data_stream_1_V |    pointer   |
+|dst_data_stream_1_V_write    | out |    1|   ap_fifo  |  dst_data_stream_1_V |    pointer   |
+|dst_data_stream_2_V_din      | out |   32|   ap_fifo  |  dst_data_stream_2_V |    pointer   |
+|dst_data_stream_2_V_full_n   |  in |    1|   ap_fifo  |  dst_data_stream_2_V |    pointer   |
+|dst_data_stream_2_V_write    | out |    1|   ap_fifo  |  dst_data_stream_2_V |    pointer   |
+|brightness_index_V           |  in |    4|  ap_stable |  brightness_index_V  |    scalar    |
+|color_correct_V              |  in |    1|  ap_stable |    color_correct_V   |    scalar    |
++-----------------------------+-----+-----+------------+----------------------+--------------+
+

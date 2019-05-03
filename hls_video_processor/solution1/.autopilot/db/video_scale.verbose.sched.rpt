@@ -1,0 +1,294 @@
+
+
+================================================================
+== Vivado HLS Report for 'video_scale'
+================================================================
+* Date:           Thu Apr 25 22:46:31 2019
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        hls_video_processor
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   6.60|     3.254|        0.82|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +---------+---------+---------+---------+---------+
+    |      Latency      |      Interval     | Pipeline|
+    |   min   |   max   |   min   |   max   |   Type  |
+    +---------+---------+---------+---------+---------+
+    |  1848062|  1848062|  1848062|  1848062|   none  |
+    +---------+---------+---------+---------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                           |      Latency      | Iteration|  Initiation Interval  | Trip |          |
+        |         Loop Name         |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- loop_channels_init_zero  |       60|       60|         1|          -|          -|    60|    no    |
+        |- loop_height              |  1848000|  1848000|      1925|          -|          -|   960|    no    |
+        | + loop_width              |     1922|     1922|         4|          1|          1|  1920|    yes   |
+        +---------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 4
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 8
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 4, States = { 4 5 6 7 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	2  / (!tmp_4)
+	3  / (tmp_4)
+3 --> 
+	4  / (!exitcond1)
+4 --> 
+	8  / (exitcond)
+	5  / (!exitcond)
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	4  / true
+8 --> 
+	3  / true
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.76>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %dst_data_stream_2_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 9 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %dst_data_stream_1_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 10 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %dst_data_stream_0_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 11 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %src_data_stream_2_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 12 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %src_data_stream_1_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 13 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %src_data_stream_0_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 14 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%sums_val_0 = alloca [60 x i32], align 4" [hls_video_processor/hls_video_processor.cpp:309]   --->   Operation 15 'alloca' 'sums_val_0' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60> <RAM>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%sums_val_1 = alloca [60 x i32], align 4" [hls_video_processor/hls_video_processor.cpp:309]   --->   Operation 16 'alloca' 'sums_val_1' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60> <RAM>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%sums_val_2 = alloca [60 x i32], align 4" [hls_video_processor/hls_video_processor.cpp:309]   --->   Operation 17 'alloca' 'sums_val_2' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60> <RAM>
+ST_1 : Operation 18 [1/1] (1.76ns)   --->   "br label %0" [hls_video_processor/hls_video_processor.cpp:320]   --->   Operation 18 'br' <Predicate = true> <Delay = 1.76>
+
+State 2 <SV = 1> <Delay = 3.25>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%t_V = phi i6 [ %c_V, %1 ], [ 0, %.preheader ]"   --->   Operation 19 'phi' 't_V' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (1.42ns)   --->   "%tmp_4 = icmp eq i6 %t_V, -4" [hls_video_processor/hls_video_processor.cpp:320]   --->   Operation 20 'icmp' 'tmp_4' <Predicate = true> <Delay = 1.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopTripCount(i64 60, i64 60, i64 60)"   --->   Operation 21 'speclooptripcount' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (1.82ns)   --->   "%c_V = add i6 %t_V, 1" [hls_video_processor/hls_video_processor.cpp:320]   --->   Operation 22 'add' 'c_V' <Predicate = true> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "br i1 %tmp_4, label %.preheader379.preheader, label %1" [hls_video_processor/hls_video_processor.cpp:320]   --->   Operation 23 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([24 x i8]* @p_str4) nounwind" [hls_video_processor/hls_video_processor.cpp:320]   --->   Operation 24 'specloopname' <Predicate = (!tmp_4)> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%tmp_5 = zext i6 %t_V to i64" [hls_video_processor/hls_video_processor.cpp:321]   --->   Operation 25 'zext' 'tmp_5' <Predicate = (!tmp_4)> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%sums_val_0_addr = getelementptr [60 x i32]* %sums_val_0, i64 0, i64 %tmp_5" [hls_video_processor/hls_video_processor.cpp:321]   --->   Operation 26 'getelementptr' 'sums_val_0_addr' <Predicate = (!tmp_4)> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (3.25ns)   --->   "store i32 0, i32* %sums_val_0_addr, align 4" [hls_video_processor/hls_video_processor.cpp:321]   --->   Operation 27 'store' <Predicate = (!tmp_4)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60> <RAM>
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%sums_val_1_addr = getelementptr [60 x i32]* %sums_val_1, i64 0, i64 %tmp_5" [hls_video_processor/hls_video_processor.cpp:321]   --->   Operation 28 'getelementptr' 'sums_val_1_addr' <Predicate = (!tmp_4)> <Delay = 0.00>
+ST_2 : Operation 29 [1/1] (3.25ns)   --->   "store i32 0, i32* %sums_val_1_addr, align 4" [hls_video_processor/hls_video_processor.cpp:321]   --->   Operation 29 'store' <Predicate = (!tmp_4)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60> <RAM>
+ST_2 : Operation 30 [1/1] (0.00ns)   --->   "%sums_val_2_addr = getelementptr [60 x i32]* %sums_val_2, i64 0, i64 %tmp_5" [hls_video_processor/hls_video_processor.cpp:321]   --->   Operation 30 'getelementptr' 'sums_val_2_addr' <Predicate = (!tmp_4)> <Delay = 0.00>
+ST_2 : Operation 31 [1/1] (3.25ns)   --->   "store i32 0, i32* %sums_val_2_addr, align 4" [hls_video_processor/hls_video_processor.cpp:321]   --->   Operation 31 'store' <Predicate = (!tmp_4)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60> <RAM>
+ST_2 : Operation 32 [1/1] (0.00ns)   --->   "br label %0" [hls_video_processor/hls_video_processor.cpp:320]   --->   Operation 32 'br' <Predicate = (!tmp_4)> <Delay = 0.00>
+ST_2 : Operation 33 [1/1] (0.00ns)   --->   "%current_sum_val_2_3 = alloca i32"   --->   Operation 33 'alloca' 'current_sum_val_2_3' <Predicate = (tmp_4)> <Delay = 0.00>
+ST_2 : Operation 34 [1/1] (0.00ns)   --->   "%current_sum_val_1_3 = alloca i32"   --->   Operation 34 'alloca' 'current_sum_val_1_3' <Predicate = (tmp_4)> <Delay = 0.00>
+ST_2 : Operation 35 [1/1] (0.00ns)   --->   "%current_sum_val_0_3 = alloca i32"   --->   Operation 35 'alloca' 'current_sum_val_0_3' <Predicate = (tmp_4)> <Delay = 0.00>
+ST_2 : Operation 36 [1/1] (1.76ns)   --->   "br label %.preheader379" [hls_video_processor/hls_video_processor.cpp:326]   --->   Operation 36 'br' <Predicate = (tmp_4)> <Delay = 1.76>
+
+State 3 <SV = 2> <Delay = 2.74>
+ST_3 : Operation 37 [1/1] (0.00ns)   --->   "%t_V_1 = phi i10 [ %r_V, %6 ], [ 0, %.preheader379.preheader ]"   --->   Operation 37 'phi' 't_V_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 38 [1/1] (0.00ns)   --->   "%tmp = trunc i10 %t_V_1 to i5" [hls_video_processor/hls_video_processor.cpp:326]   --->   Operation 38 'trunc' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 39 [1/1] (1.77ns)   --->   "%exitcond1 = icmp eq i10 %t_V_1, -64" [hls_video_processor/hls_video_processor.cpp:326]   --->   Operation 39 'icmp' 'exitcond1' <Predicate = true> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 40 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopTripCount(i64 960, i64 960, i64 960)"   --->   Operation 40 'speclooptripcount' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 41 [1/1] (1.73ns)   --->   "%r_V = add i10 1, %t_V_1" [hls_video_processor/hls_video_processor.cpp:326]   --->   Operation 41 'add' 'r_V' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 42 [1/1] (0.00ns)   --->   "br i1 %exitcond1, label %7, label %2" [hls_video_processor/hls_video_processor.cpp:326]   --->   Operation 42 'br' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 43 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([12 x i8]* @p_str1) nounwind" [hls_video_processor/hls_video_processor.cpp:326]   --->   Operation 43 'specloopname' <Predicate = (!exitcond1)> <Delay = 0.00>
+ST_3 : Operation 44 [1/1] (0.00ns)   --->   "%tmp_2 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str1)" [hls_video_processor/hls_video_processor.cpp:326]   --->   Operation 44 'specregionbegin' 'tmp_2' <Predicate = (!exitcond1)> <Delay = 0.00>
+ST_3 : Operation 45 [1/1] (1.36ns)   --->   "%tmp_8 = icmp eq i5 %tmp, -1" [hls_video_processor/hls_video_processor.cpp:368]   --->   Operation 45 'icmp' 'tmp_8' <Predicate = (!exitcond1)> <Delay = 1.36> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 46 [1/1] (1.76ns)   --->   "br label %3" [hls_video_processor/hls_video_processor.cpp:327]   --->   Operation 46 'br' <Predicate = (!exitcond1)> <Delay = 1.76>
+ST_3 : Operation 47 [1/1] (0.00ns)   --->   "ret void" [hls_video_processor/hls_video_processor.cpp:392]   --->   Operation 47 'ret' <Predicate = (exitcond1)> <Delay = 0.00>
+
+State 4 <SV = 3> <Delay = 3.25>
+ST_4 : Operation 48 [1/1] (0.00ns)   --->   "%t_V_2 = phi i11 [ 0, %2 ], [ %c_V_1, %._crit_edge ]"   --->   Operation 48 'phi' 't_V_2' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 49 [1/1] (0.00ns)   --->   "%tmp_16 = trunc i11 %t_V_2 to i5" [hls_video_processor/hls_video_processor.cpp:327]   --->   Operation 49 'trunc' 'tmp_16' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 50 [1/1] (1.88ns)   --->   "%exitcond = icmp eq i11 %t_V_2, -128" [hls_video_processor/hls_video_processor.cpp:327]   --->   Operation 50 'icmp' 'exitcond' <Predicate = true> <Delay = 1.88> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 51 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopTripCount(i64 1920, i64 1920, i64 1920)"   --->   Operation 51 'speclooptripcount' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 52 [1/1] (1.63ns)   --->   "%c_V_1 = add i11 1, %t_V_2" [hls_video_processor/hls_video_processor.cpp:327]   --->   Operation 52 'add' 'c_V_1' <Predicate = true> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 53 [1/1] (0.00ns)   --->   "br i1 %exitcond, label %6, label %_ZrsILi32ELb0EEN11ap_int_baseIXT_EXT0_EE5RTypeIXT_EXT0_EE4arg1ERKS1_i.exit_ifconv" [hls_video_processor/hls_video_processor.cpp:327]   --->   Operation 53 'br' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 54 [1/1] (0.00ns)   --->   "%r_V_2 = call i6 @_ssdm_op_PartSelect.i6.i11.i32.i32(i11 %t_V_2, i32 5, i32 10)" [hls_video_processor/hls_video_processor.cpp:340]   --->   Operation 54 'partselect' 'r_V_2' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_4 : Operation 55 [1/1] (1.36ns)   --->   "%tmp_6 = icmp eq i5 %tmp_16, 0" [hls_video_processor/hls_video_processor.cpp:345]   --->   Operation 55 'icmp' 'tmp_6' <Predicate = (!exitcond)> <Delay = 1.36> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 56 [1/1] (0.00ns)   --->   "%tmp_9 = zext i6 %r_V_2 to i64" [hls_video_processor/hls_video_processor.cpp:346]   --->   Operation 56 'zext' 'tmp_9' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_4 : Operation 57 [1/1] (0.00ns)   --->   "%sums_val_0_addr_1 = getelementptr [60 x i32]* %sums_val_0, i64 0, i64 %tmp_9" [hls_video_processor/hls_video_processor.cpp:346]   --->   Operation 57 'getelementptr' 'sums_val_0_addr_1' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_4 : Operation 58 [2/2] (3.25ns)   --->   "%current_sum_val_0 = load i32* %sums_val_0_addr_1, align 4" [hls_video_processor/hls_video_processor.cpp:346]   --->   Operation 58 'load' 'current_sum_val_0' <Predicate = (!exitcond)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60> <RAM>
+ST_4 : Operation 59 [1/1] (0.00ns)   --->   "%sums_val_1_addr_1 = getelementptr [60 x i32]* %sums_val_1, i64 0, i64 %tmp_9" [hls_video_processor/hls_video_processor.cpp:346]   --->   Operation 59 'getelementptr' 'sums_val_1_addr_1' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_4 : Operation 60 [2/2] (3.25ns)   --->   "%current_sum_val_1 = load i32* %sums_val_1_addr_1, align 4" [hls_video_processor/hls_video_processor.cpp:346]   --->   Operation 60 'load' 'current_sum_val_1' <Predicate = (!exitcond)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60> <RAM>
+ST_4 : Operation 61 [1/1] (0.00ns)   --->   "%sums_val_2_addr_1 = getelementptr [60 x i32]* %sums_val_2, i64 0, i64 %tmp_9" [hls_video_processor/hls_video_processor.cpp:346]   --->   Operation 61 'getelementptr' 'sums_val_2_addr_1' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_4 : Operation 62 [2/2] (3.25ns)   --->   "%current_sum_val_2 = load i32* %sums_val_2_addr_1, align 4" [hls_video_processor/hls_video_processor.cpp:346]   --->   Operation 62 'load' 'current_sum_val_2' <Predicate = (!exitcond)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60> <RAM>
+ST_4 : Operation 63 [1/1] (1.36ns)   --->   "%tmp_3 = icmp eq i5 %tmp_16, -1" [hls_video_processor/hls_video_processor.cpp:365]   --->   Operation 63 'icmp' 'tmp_3' <Predicate = (!exitcond)> <Delay = 1.36> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 64 [1/1] (0.00ns)   --->   "br i1 %tmp_3, label %4, label %._crit_edge" [hls_video_processor/hls_video_processor.cpp:365]   --->   Operation 64 'br' <Predicate = (!exitcond)> <Delay = 0.00>
+
+State 5 <SV = 4> <Delay = 3.25>
+ST_5 : Operation 65 [1/2] (3.25ns)   --->   "%current_sum_val_0 = load i32* %sums_val_0_addr_1, align 4" [hls_video_processor/hls_video_processor.cpp:346]   --->   Operation 65 'load' 'current_sum_val_0' <Predicate = (!exitcond)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60> <RAM>
+ST_5 : Operation 66 [1/2] (3.25ns)   --->   "%current_sum_val_1 = load i32* %sums_val_1_addr_1, align 4" [hls_video_processor/hls_video_processor.cpp:346]   --->   Operation 66 'load' 'current_sum_val_1' <Predicate = (!exitcond)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60> <RAM>
+ST_5 : Operation 67 [1/2] (3.25ns)   --->   "%current_sum_val_2 = load i32* %sums_val_2_addr_1, align 4" [hls_video_processor/hls_video_processor.cpp:346]   --->   Operation 67 'load' 'current_sum_val_2' <Predicate = (!exitcond)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60> <RAM>
+ST_5 : Operation 68 [1/1] (0.00ns)   --->   "%tmp_1 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str24)" [C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:672->C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:711->hls_video_processor/hls_video_processor.cpp:357]   --->   Operation 68 'specregionbegin' 'tmp_1' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_5 : Operation 69 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecProtocol(i32 0, [1 x i8]* @p_str) nounwind" [C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:676->C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:711->hls_video_processor/hls_video_processor.cpp:357]   --->   Operation 69 'specprotocol' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_5 : Operation 70 [1/1] (2.88ns)   --->   "%tmp_20 = call i32 @_ssdm_op_Read.ap_fifo.volatile.i32P(i32* %src_data_stream_0_V)" [C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:679->C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:711->hls_video_processor/hls_video_processor.cpp:357]   --->   Operation 70 'read' 'tmp_20' <Predicate = (!exitcond)> <Delay = 2.88> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_5 : Operation 71 [1/1] (2.88ns)   --->   "%tmp_21 = call i32 @_ssdm_op_Read.ap_fifo.volatile.i32P(i32* %src_data_stream_1_V)" [C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:679->C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:711->hls_video_processor/hls_video_processor.cpp:357]   --->   Operation 71 'read' 'tmp_21' <Predicate = (!exitcond)> <Delay = 2.88> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_5 : Operation 72 [1/1] (2.88ns)   --->   "%tmp_19 = call i32 @_ssdm_op_Read.ap_fifo.volatile.i32P(i32* %src_data_stream_2_V)" [C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:679->C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:711->hls_video_processor/hls_video_processor.cpp:357]   --->   Operation 72 'read' 'tmp_19' <Predicate = (!exitcond)> <Delay = 2.88> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_5 : Operation 73 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str24, i32 %tmp_1)" [C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:681->C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:711->hls_video_processor/hls_video_processor.cpp:357]   --->   Operation 73 'specregionend' 'empty' <Predicate = (!exitcond)> <Delay = 0.00>
+
+State 6 <SV = 5> <Delay = 2.55>
+ST_6 : Operation 74 [1/1] (0.00ns)   --->   "%current_sum_val_2_3_1 = load i32* %current_sum_val_2_3"   --->   Operation 74 'load' 'current_sum_val_2_3_1' <Predicate = (!exitcond & !tmp_6)> <Delay = 0.00>
+ST_6 : Operation 75 [1/1] (0.00ns)   --->   "%current_sum_val_1_3_1 = load i32* %current_sum_val_1_3"   --->   Operation 75 'load' 'current_sum_val_1_3_1' <Predicate = (!exitcond & !tmp_6)> <Delay = 0.00>
+ST_6 : Operation 76 [1/1] (0.00ns)   --->   "%current_sum_val_0_3_1 = load i32* %current_sum_val_0_3"   --->   Operation 76 'load' 'current_sum_val_0_3_1' <Predicate = (!exitcond & !tmp_6)> <Delay = 0.00>
+ST_6 : Operation 77 [1/1] (0.00ns) (grouped into LUT with out node current_sum_val_0_1)   --->   "%current_sum_val_0_2 = select i1 %tmp_6, i32 %current_sum_val_0, i32 %current_sum_val_0_3_1" [hls_video_processor/hls_video_processor.cpp:345]   --->   Operation 77 'select' 'current_sum_val_0_2' <Predicate = (!exitcond)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 78 [1/1] (0.00ns) (grouped into LUT with out node current_sum_val_1_1)   --->   "%current_sum_val_1_2 = select i1 %tmp_6, i32 %current_sum_val_1, i32 %current_sum_val_1_3_1" [hls_video_processor/hls_video_processor.cpp:345]   --->   Operation 78 'select' 'current_sum_val_1_2' <Predicate = (!exitcond)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 79 [1/1] (0.00ns) (grouped into LUT with out node current_sum_val_2_1)   --->   "%current_sum_val_2_2 = select i1 %tmp_6, i32 %current_sum_val_2, i32 %current_sum_val_2_3_1" [hls_video_processor/hls_video_processor.cpp:345]   --->   Operation 79 'select' 'current_sum_val_2_2' <Predicate = (!exitcond)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 80 [1/1] (2.55ns) (out node of the LUT)   --->   "%current_sum_val_0_1 = add nsw i32 %current_sum_val_0_2, %tmp_20" [hls_video_processor/hls_video_processor.cpp:360]   --->   Operation 80 'add' 'current_sum_val_0_1' <Predicate = (!exitcond)> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 81 [1/1] (2.55ns) (out node of the LUT)   --->   "%current_sum_val_1_1 = add nsw i32 %current_sum_val_1_2, %tmp_21" [hls_video_processor/hls_video_processor.cpp:360]   --->   Operation 81 'add' 'current_sum_val_1_1' <Predicate = (!exitcond)> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 82 [1/1] (2.55ns) (out node of the LUT)   --->   "%current_sum_val_2_1 = add nsw i32 %current_sum_val_2_2, %tmp_19" [hls_video_processor/hls_video_processor.cpp:360]   --->   Operation 82 'add' 'current_sum_val_2_1' <Predicate = (!exitcond)> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 83 [1/1] (1.76ns)   --->   "br i1 %tmp_8, label %.preheader.0, label %5" [hls_video_processor/hls_video_processor.cpp:368]   --->   Operation 83 'br' <Predicate = (!exitcond & tmp_3)> <Delay = 1.76>
+ST_6 : Operation 84 [1/1] (1.76ns)   --->   "br label %5" [hls_video_processor/hls_video_processor.cpp:382]   --->   Operation 84 'br' <Predicate = (!exitcond & tmp_3 & tmp_8)> <Delay = 1.76>
+ST_6 : Operation 85 [1/1] (0.00ns)   --->   "store i32 %current_sum_val_0_1, i32* %current_sum_val_0_3" [hls_video_processor/hls_video_processor.cpp:360]   --->   Operation 85 'store' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_6 : Operation 86 [1/1] (0.00ns)   --->   "store i32 %current_sum_val_1_1, i32* %current_sum_val_1_3" [hls_video_processor/hls_video_processor.cpp:360]   --->   Operation 86 'store' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_6 : Operation 87 [1/1] (0.00ns)   --->   "store i32 %current_sum_val_2_1, i32* %current_sum_val_2_3" [hls_video_processor/hls_video_processor.cpp:360]   --->   Operation 87 'store' <Predicate = (!exitcond)> <Delay = 0.00>
+
+State 7 <SV = 6> <Delay = 3.25>
+ST_7 : Operation 88 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([11 x i8]* @p_str2) nounwind" [hls_video_processor/hls_video_processor.cpp:327]   --->   Operation 88 'specloopname' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_7 : Operation 89 [1/1] (0.00ns)   --->   "%tmp_s = call i32 (...)* @_ssdm_op_SpecRegionBegin([11 x i8]* @p_str2)" [hls_video_processor/hls_video_processor.cpp:327]   --->   Operation 89 'specregionbegin' 'tmp_s' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_7 : Operation 90 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str) nounwind" [hls_video_processor/hls_video_processor.cpp:332]   --->   Operation 90 'specpipeline' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_7 : Operation 91 [1/1] (0.00ns)   --->   "%tmp_7 = call i22 @_ssdm_op_PartSelect.i22.i32.i32.i32(i32 %current_sum_val_0_1, i32 10, i32 31)" [hls_video_processor/hls_video_processor.cpp:371]   --->   Operation 91 'partselect' 'tmp_7' <Predicate = (!exitcond & tmp_3 & tmp_8)> <Delay = 0.00>
+ST_7 : Operation 92 [1/1] (0.00ns)   --->   "%tmp_10 = sext i22 %tmp_7 to i32" [hls_video_processor/hls_video_processor.cpp:371]   --->   Operation 92 'sext' 'tmp_10' <Predicate = (!exitcond & tmp_3 & tmp_8)> <Delay = 0.00>
+ST_7 : Operation 93 [1/1] (0.00ns)   --->   "%tmp_11 = call i22 @_ssdm_op_PartSelect.i22.i32.i32.i32(i32 %current_sum_val_1_1, i32 10, i32 31)" [hls_video_processor/hls_video_processor.cpp:371]   --->   Operation 93 'partselect' 'tmp_11' <Predicate = (!exitcond & tmp_3 & tmp_8)> <Delay = 0.00>
+ST_7 : Operation 94 [1/1] (0.00ns)   --->   "%tmp_12 = sext i22 %tmp_11 to i32" [hls_video_processor/hls_video_processor.cpp:371]   --->   Operation 94 'sext' 'tmp_12' <Predicate = (!exitcond & tmp_3 & tmp_8)> <Delay = 0.00>
+ST_7 : Operation 95 [1/1] (0.00ns)   --->   "%tmp_13 = call i22 @_ssdm_op_PartSelect.i22.i32.i32.i32(i32 %current_sum_val_2_1, i32 10, i32 31)" [hls_video_processor/hls_video_processor.cpp:371]   --->   Operation 95 'partselect' 'tmp_13' <Predicate = (!exitcond & tmp_3 & tmp_8)> <Delay = 0.00>
+ST_7 : Operation 96 [1/1] (0.00ns)   --->   "%tmp_14 = sext i22 %tmp_13 to i32" [hls_video_processor/hls_video_processor.cpp:371]   --->   Operation 96 'sext' 'tmp_14' <Predicate = (!exitcond & tmp_3 & tmp_8)> <Delay = 0.00>
+ST_7 : Operation 97 [1/1] (0.00ns)   --->   "%tmp_15 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str26)" [C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:696->C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:717->hls_video_processor/hls_video_processor.cpp:375]   --->   Operation 97 'specregionbegin' 'tmp_15' <Predicate = (!exitcond & tmp_3 & tmp_8)> <Delay = 0.00>
+ST_7 : Operation 98 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecProtocol(i32 0, [1 x i8]* @p_str) nounwind" [C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:700->C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:717->hls_video_processor/hls_video_processor.cpp:375]   --->   Operation 98 'specprotocol' <Predicate = (!exitcond & tmp_3 & tmp_8)> <Delay = 0.00>
+ST_7 : Operation 99 [1/1] (2.88ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i32P(i32* %dst_data_stream_0_V, i32 %tmp_10)" [C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:703->C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:717->hls_video_processor/hls_video_processor.cpp:375]   --->   Operation 99 'write' <Predicate = (!exitcond & tmp_3 & tmp_8)> <Delay = 2.88> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_7 : Operation 100 [1/1] (2.88ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i32P(i32* %dst_data_stream_1_V, i32 %tmp_12)" [C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:703->C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:717->hls_video_processor/hls_video_processor.cpp:375]   --->   Operation 100 'write' <Predicate = (!exitcond & tmp_3 & tmp_8)> <Delay = 2.88> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_7 : Operation 101 [1/1] (2.88ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i32P(i32* %dst_data_stream_2_V, i32 %tmp_14)" [C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:703->C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:717->hls_video_processor/hls_video_processor.cpp:375]   --->   Operation 101 'write' <Predicate = (!exitcond & tmp_3 & tmp_8)> <Delay = 2.88> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_7 : Operation 102 [1/1] (0.00ns)   --->   "%empty_12 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str26, i32 %tmp_15)" [C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:705->C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:717->hls_video_processor/hls_video_processor.cpp:375]   --->   Operation 102 'specregionend' 'empty_12' <Predicate = (!exitcond & tmp_3 & tmp_8)> <Delay = 0.00>
+ST_7 : Operation 103 [1/1] (0.00ns)   --->   "%storemerge2 = phi i32 [ 0, %.preheader.0 ], [ %current_sum_val_0_1, %4 ]"   --->   Operation 103 'phi' 'storemerge2' <Predicate = (tmp_3)> <Delay = 0.00>
+ST_7 : Operation 104 [1/1] (0.00ns)   --->   "%storemerge1 = phi i32 [ 0, %.preheader.0 ], [ %current_sum_val_1_1, %4 ]"   --->   Operation 104 'phi' 'storemerge1' <Predicate = (tmp_3)> <Delay = 0.00>
+ST_7 : Operation 105 [1/1] (0.00ns)   --->   "%storemerge = phi i32 [ 0, %.preheader.0 ], [ %current_sum_val_2_1, %4 ]"   --->   Operation 105 'phi' 'storemerge' <Predicate = (tmp_3)> <Delay = 0.00>
+ST_7 : Operation 106 [1/1] (3.25ns)   --->   "store i32 %storemerge2, i32* %sums_val_0_addr_1, align 4" [hls_video_processor/hls_video_processor.cpp:378]   --->   Operation 106 'store' <Predicate = (tmp_3)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60> <RAM>
+ST_7 : Operation 107 [1/1] (3.25ns)   --->   "store i32 %storemerge1, i32* %sums_val_1_addr_1, align 4" [hls_video_processor/hls_video_processor.cpp:384]   --->   Operation 107 'store' <Predicate = (tmp_3)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60> <RAM>
+ST_7 : Operation 108 [1/1] (3.25ns)   --->   "store i32 %storemerge, i32* %sums_val_2_addr_1, align 4" [hls_video_processor/hls_video_processor.cpp:378]   --->   Operation 108 'store' <Predicate = (tmp_3)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 60> <RAM>
+ST_7 : Operation 109 [1/1] (0.00ns)   --->   "br label %._crit_edge" [hls_video_processor/hls_video_processor.cpp:389]   --->   Operation 109 'br' <Predicate = (tmp_3)> <Delay = 0.00>
+ST_7 : Operation 110 [1/1] (0.00ns)   --->   "%empty_13 = call i32 (...)* @_ssdm_op_SpecRegionEnd([11 x i8]* @p_str2, i32 %tmp_s)" [hls_video_processor/hls_video_processor.cpp:390]   --->   Operation 110 'specregionend' 'empty_13' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_7 : Operation 111 [1/1] (0.00ns)   --->   "br label %3" [hls_video_processor/hls_video_processor.cpp:327]   --->   Operation 111 'br' <Predicate = (!exitcond)> <Delay = 0.00>
+
+State 8 <SV = 4> <Delay = 0.00>
+ST_8 : Operation 112 [1/1] (0.00ns)   --->   "%empty_14 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str1, i32 %tmp_2)" [hls_video_processor/hls_video_processor.cpp:391]   --->   Operation 112 'specregionend' 'empty_14' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 113 [1/1] (0.00ns)   --->   "br label %.preheader379" [hls_video_processor/hls_video_processor.cpp:326]   --->   Operation 113 'br' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 6.6ns, clock uncertainty: 0.825ns.
+
+ <State 1>: 1.77ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('c.V') with incoming values : ('c.V', hls_video_processor/hls_video_processor.cpp:320) [18]  (1.77 ns)
+
+ <State 2>: 3.25ns
+The critical path consists of the following:
+	'phi' operation ('c.V') with incoming values : ('c.V', hls_video_processor/hls_video_processor.cpp:320) [18]  (0 ns)
+	'getelementptr' operation ('sums_val_0_addr', hls_video_processor/hls_video_processor.cpp:321) [26]  (0 ns)
+	'store' operation (hls_video_processor/hls_video_processor.cpp:321) of constant 0 on array 'sums.val[0]', hls_video_processor/hls_video_processor.cpp:309 [27]  (3.25 ns)
+
+ <State 3>: 2.75ns
+The critical path consists of the following:
+	'icmp' operation ('exitcond1', hls_video_processor/hls_video_processor.cpp:326) [41]  (1.77 ns)
+	blocking operation 0.978 ns on control path)
+
+ <State 4>: 3.25ns
+The critical path consists of the following:
+	'phi' operation ('c.V') with incoming values : ('c.V', hls_video_processor/hls_video_processor.cpp:327) [51]  (0 ns)
+	'getelementptr' operation ('sums_val_0_addr_1', hls_video_processor/hls_video_processor.cpp:346) [67]  (0 ns)
+	'load' operation ('current_sum.val[0]', hls_video_processor/hls_video_processor.cpp:346) on array 'sums.val[0]', hls_video_processor/hls_video_processor.cpp:309 [68]  (3.25 ns)
+
+ <State 5>: 3.25ns
+The critical path consists of the following:
+	'load' operation ('current_sum.val[0]', hls_video_processor/hls_video_processor.cpp:346) on array 'sums.val[0]', hls_video_processor/hls_video_processor.cpp:309 [68]  (3.25 ns)
+
+ <State 6>: 2.55ns
+The critical path consists of the following:
+	'load' operation ('current_sum_val_2_3_1') on local variable 'current_sum.val[2]' [58]  (0 ns)
+	'select' operation ('current_sum.val[2]', hls_video_processor/hls_video_processor.cpp:345) [75]  (0 ns)
+	'add' operation ('current_sum.val[2]', hls_video_processor/hls_video_processor.cpp:360) [84]  (2.55 ns)
+	'store' operation (hls_video_processor/hls_video_processor.cpp:360) of variable 'current_sum.val[2]', hls_video_processor/hls_video_processor.cpp:360 on local variable 'current_sum.val[2]' [115]  (0 ns)
+
+ <State 7>: 3.25ns
+The critical path consists of the following:
+	'phi' operation ('current_sum.val[0]') with incoming values : ('current_sum.val[0]', hls_video_processor/hls_video_processor.cpp:360) [104]  (0 ns)
+	'store' operation (hls_video_processor/hls_video_processor.cpp:378) of variable 'current_sum.val[0]' on array 'sums.val[0]', hls_video_processor/hls_video_processor.cpp:309 [107]  (3.25 ns)
+
+ <State 8>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

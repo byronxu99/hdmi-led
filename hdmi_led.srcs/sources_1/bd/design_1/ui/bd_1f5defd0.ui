@@ -1,0 +1,79 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "PinnedPorts":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y 60 -defaultsOSRD
+preplace port hdmi_in_clk_n -pg 1 -y 390 -defaultsOSRD
+preplace port hdmi_in_clk_p -pg 1 -y 590 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 90 -defaultsOSRD
+preplace port hdmi_in_ddc -pg 1 -y 670 -defaultsOSRD
+preplace portBus sws_2bits_tri_i -pg 1 -y 300 -defaultsOSRD
+preplace portBus hdmi_in_data_n -pg 1 -y 660 -defaultsOSRD
+preplace portBus hdmi_in_data_p -pg 1 -y 630 -defaultsOSRD
+preplace portBus leds -pg 1 -y 290 -defaultsOSRD
+preplace portBus pmodb_gpio_tri_io -pg 1 -y 540 -defaultsOSRD
+preplace portBus btns_4bits_tri_i -pg 1 -y 270 -defaultsOSRD
+preplace portBus hdmi_in_hpd -pg 1 -y 730 -defaultsOSRD
+preplace inst matrix_controller_0 -pg 1 -lvl 5 -y 780 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 8 -y 730 -defaultsOSRD
+preplace inst user_input_0 -pg 1 -lvl 4 -y 270 -defaultsOSRD
+preplace inst ws2812b_driver_0 -pg 1 -lvl 7 -y 550 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -y 490 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 8 -y 290 -defaultsOSRD
+preplace inst xlconcat_1 -pg 1 -lvl 8 -y 540 -defaultsOSRD
+preplace inst blinky_0 -pg 1 -lvl 7 -y 260 -defaultsOSRD
+preplace inst v_vid_in_axi4s_0 -pg 1 -lvl 4 -y 860 -defaultsOSRD
+preplace inst triple_buffer_v1_0_0 -pg 1 -lvl 6 -y 550 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 2 -y 840 -defaultsOSRD
+preplace inst hls_video_processor_0 -pg 1 -lvl 5 -y 490 -defaultsOSRD
+preplace inst dvi2rgb_1 -pg 1 -lvl 3 -y 640 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 8 -y 100 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 8 1 NJ
+preplace netloc v_vid_in_axi4s_0_video_out 1 4 1 1230
+preplace netloc user_input_0_brightness 1 4 1 1270
+preplace netloc dvi2rgb_1_DDC 1 3 6 NJ 670 NJ 670 NJ 670 NJ 670 NJ 670 NJ
+preplace netloc ws2812b_driver_0_led_out 1 7 1 2290J
+preplace netloc triple_buffer_v1_0_0_data_out 1 6 1 N
+preplace netloc user_input_0_output_disable 1 4 4 1230 330 NJ 330 NJ 330 2300J
+preplace netloc xlconcat_1_dout 1 8 1 NJ
+preplace netloc ws2812b_driver_0_next_data 1 4 4 1250 870 NJ 870 NJ 870 2290
+preplace netloc blinky_0_led 1 7 1 NJ
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 9 -90 380 NJ 380 NJ 380 NJ 380 NJ 380 NJ 380 NJ 380 NJ 380 2680
+preplace netloc hls_video_processor_0_stream_out 1 5 1 N
+preplace netloc user_input_0_color_correct 1 4 1 1260
+preplace netloc hdmi_in_data_n_1 1 0 3 NJ 660 NJ 660 450J
+preplace netloc hdmi_in_clk_n_1 1 0 3 NJ 390 NJ 390 470J
+preplace netloc hdmi_in_clk_p_1 1 0 3 NJ 590 NJ 590 NJ
+preplace netloc btns_4bits_tri_i_1 1 0 4 NJ 270 NJ 270 NJ 270 NJ
+preplace netloc dvi2rgb_1_PixelClk 1 3 1 790
+preplace netloc matrix_controller_0_reset 1 5 2 NJ 750 2010
+preplace netloc dvi2rgb_1_aPixelClkLckd 1 3 5 830J 640 1240J 320 NJ 320 NJ 320 2280
+preplace netloc xlconcat_0_dout 1 8 1 NJ
+preplace netloc xlconstant_0_dout 1 8 1 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 8 1 2690J
+preplace netloc matrix_controller_0_array_x 1 5 1 1630
+preplace netloc dvi2rgb_1_vid_pVSync 1 3 1 810
+preplace netloc clk_wiz_0_clk_out1 1 2 1 470
+preplace netloc user_input_0_output_enable 1 4 2 N 300 1640J
+preplace netloc user_input_0_flip_odd 1 4 1 1220
+preplace netloc user_input_0_flip_even 1 4 1 1250
+preplace netloc sws_2bits_tri_i_1 1 0 4 -90J 290 NJ 290 NJ 290 NJ
+preplace netloc matrix_controller_0_array_y 1 5 1 1650
+preplace netloc proc_sys_reset_0_peripheral_reset 1 1 1 270
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 5 N 530 460 770 800 660 1260 610 NJ
+preplace netloc matrix_controller_0_next_frame 1 5 1 1660
+preplace netloc dvi2rgb_1_vid_pData 1 3 1 860
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 9 -80 670 260 770 450J 780 840 650 1270 590 1640 680 2000 340 2290 200 2690
+preplace netloc dvi2rgb_1_vid_pHSync 1 3 1 850
+preplace netloc dvi2rgb_1_vid_pVDE 1 3 1 820
+preplace netloc hdmi_in_data_p_1 1 0 3 NJ 630 NJ 630 NJ
+levelinfo -pg 1 -110 90 360 630 1040 1460 1850 2160 2490 2710 -top 0 -bot 1030
+"
+}
+{
+   "da_axi4_cnt":"1",
+   "da_board_cnt":"7",
+   "da_clkrst_cnt":"6",
+   "da_ps7_cnt":"1"
+}
